@@ -38,6 +38,9 @@
   - `table-filtering-stats.tex`
   - `table-field-cov.tex`
   - one embedded figure for the extraction pipeline example
+- Supporting data artifacts already present:
+  - `data/data_card.md`
+  - `data/sr4all_full.jsonl`
 - Strong current points:
   - title is already in good Scientific Data style
   - abstract is close to the right tone and scope
@@ -55,7 +58,7 @@
   - frame-file comments do not match the actual role of `part6` and `part7`
   - `Methods` currently contains footnotes for tool URLs
   - `Methods` uses a `\paragraph{Verify-then-repair pipeline.}` subheading that may need simplification for house style consistency
-  - `README.md` appears empty, so there is no local packaging note for dataset/repository structure yet
+  - `SCIDATA_26_SR4ALL/README.md` appears empty, but `data/data_card.md` now provides a concrete local source for dataset structure and release wording
 - Interpretation:
   - the paper already has a credible `Background and Summary` plus a fairly mature `Methods`
   - the submission is still blocked by missing descriptor-specific sections, not by lack of core narrative
@@ -166,7 +169,7 @@
 - Add end matter sections.
 - Remove or replace the current footnotes in `Methods`.
 - Decide how to handle references for final Scientific Data packaging.
-- Add a minimal local description of the released resource structure so `Data Records` can be written concretely.
+- Use `data/data_card.md` and the files in `data/` to write `Data Records` concretely, and add a manuscript-local packaging note only if it still adds value.
 - Re-check references and submission packaging against Scientific Data requirements.
 
 ## Bottom line

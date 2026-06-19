@@ -15,6 +15,17 @@ This repository supports the resubmission of `Webis-SR4ALL-26` to *Nature Scient
 - This is the most important folder for current work.
 - Contains the LaTeX manuscript split into section files, plus local tables and figures.
 
+### `data/`
+
+- Local dataset workspace for the released `SR4ALL` artifacts.
+- Use this directory when drafting or checking:
+  - `Data Records`
+  - `Usage Notes`
+  - `Data Availability`
+  - dataset-facing parts of `Technical Validation`
+- Inspect the actual files in this directory before changing file counts, names, schemas, or release wording.
+- `data/data_card.md` is the first file to read here.
+
 ### `SIGIR_26_SR4ALL/`
 
 - Earlier SIGIR 2026 submission of the same dataset.
@@ -146,6 +157,22 @@ This repository supports the resubmission of `Webis-SR4ALL-26` to *Nature Scient
 - Currently empty.
 - If needed, this is a good place for packaging or build notes specific to `SCIDATA_26_SR4ALL`.
 
+## Contents of `data/`
+
+### `data_card.md`
+
+- Local description of the released `SR4ALL` data package.
+- Primary starting point for:
+  - released file inventory
+  - field descriptions
+  - stated corpus counts
+  - reuse scenarios and limitations
+
+### `sr4all_full.jsonl`
+
+- Main JSONL release artifact currently present in the repository.
+- Inspect representative records directly when manuscript text needs concrete examples or field verification.
+
 ## Contents of `SIGIR_26_SR4ALL/`
 
 - Prior SIGIR paper source.
@@ -217,7 +244,8 @@ When beginning a new task in this repository:
    - usually `SCIDATA_26_SR4ALL`
    - sometimes `SDATA-23-nature-journal` for reference
    - sometimes `SIGIR_26_SR4ALL` for source reuse
-7. Read `writing_tipps.txt` before substantial prose edits.
+7. If the task concerns dataset description, validation, or availability, inspect `data/data_card.md` and the relevant files in `data/`.
+8. Read `writing_tipps.txt` before substantial prose edits.
 
 ## Current working assumptions
 
