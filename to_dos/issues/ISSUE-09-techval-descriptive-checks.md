@@ -7,8 +7,9 @@
 
 ## How to do it
 
- - Use current corpus counts and distributions already available or easily derivable.
- - Add the strongest descriptive checks to `Technical Validation`.
+- Use current corpus counts and distributions already available or easily derivable.
+- Add the strongest descriptive checks to the beginning of `Technical Validation`.
+- After the descriptive statistics, add targeted sanity checks on notable outliers rather than interleaving the two.
 - Reuse or extend current tables if useful.
 
 ## Definition of done

@@ -3,12 +3,12 @@
 ## What to do
 
 - Add a scalable complement to manual extraction validation where useful.
-- This may include stronger-model re-checking, LLM-as-judge support, or another structured secondary validation layer.
+- Use a staged validation design in which manual validation remains primary, but stronger LLM re-extraction and LLM-as-judge checks provide structured support.
 
 ## How to do it
 
- - Decide which scalable method is scientifically defensible for this paper.
- - Position it as support for manual review, not as a replacement for all human inspection.
+- Decide which stronger models and LLM-as-judge setup are scientifically defensible for this paper.
+- Position them as support for manual review, not as a replacement for all human inspection.
 - Describe it in `SCIDATA_26_SR4ALL/scidata--sr4all-part4.tex`.
 
 ## Definition of done

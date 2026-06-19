@@ -107,12 +107,14 @@
 - Define exactly which extraction-correctness claims the section supports.
 - Report field-level or grouped-field metrics with uncertainty, not point estimates alone.
 - Increase and justify sample size statistically.
+- Size the validation sample against the extracted full-text subset rather than relying on a convenience sample such as 60 reviews.
 - Use stratified sampling:
   - discipline
   - document length
   - extraction outcome category
-- Validate extraction quality with stronger baselines or scalable support where useful.
-- Use scalable judging or review methodology where manual validation alone is too small.
+- Start the section with descriptive statistics, then move to validation and outlier-oriented sanity checks.
+- Validate extraction quality with staged support from stronger LLM re-extraction and LLM-as-judge methods where useful.
+- Use scalable judging or review methodology only as support for the main manual validation design.
 - Add corpus-level descriptive statistics:
   - field coverage
   - extraction coverage

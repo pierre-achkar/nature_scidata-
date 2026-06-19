@@ -7,8 +7,8 @@
 
 ## How to do it
 
- - Review the current corpus distributions.
- - Choose stratification variables that expose meaningful variation in extraction difficulty and corpus coverage, such as discipline, document length, and extracted-field profile.
+- Review the current corpus distributions.
+- Choose stratification variables that expose meaningful variation in extraction difficulty and corpus coverage, with discipline and document length as required factors and extracted-field profile as an additional option if useful.
 - Document the strata in `SCIDATA_26_SR4ALL/scidata--sr4all-part4.tex`.
 
 ## Definition of done
