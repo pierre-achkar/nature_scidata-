@@ -89,6 +89,7 @@
   - repository link
 - `Usage Notes`
   - example records
+  - normalized-query example if retained
   - recommended filters or subsets
   - practical reuse guidance
   - ethics / misuse notes
@@ -170,6 +171,7 @@
 - Remove or replace the current footnotes in `Methods`.
 - Decide how to handle references for final Scientific Data packaging.
 - Use `data/data_card.md` and the files in `data/` to write `Data Records` concretely, and add a manuscript-local packaging note only if it still adds value.
+- Keep `Data Records` focused on released artifacts, layer linkage, and subset logic; leave detailed normalized-query examples to `Usage Notes`.
 - Re-check references and submission packaging against Scientific Data requirements.
 
 ## Bottom line
