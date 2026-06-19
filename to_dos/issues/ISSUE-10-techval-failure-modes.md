@@ -2,13 +2,13 @@
 
 ## What to do
 
-- Explain where the extraction and normalization pipeline fails or remains uncertain.
+- Explain where the extraction pipeline fails or remains uncertain.
 - Make the section honest about both precision-oriented design and recall losses.
 
 ## How to do it
 
-- Identify common failure patterns from parsing, verification, and normalization.
-- Summarize them as reviewer-facing limitations within `Technical Validation`.
+ - Identify common failure patterns from parsing, verification, and abstention.
+ - Summarize them as reviewer-facing limitations within `Technical Validation`.
 - Keep the language factual and non-defensive.
 
 ## Definition of done

@@ -103,18 +103,20 @@
 ## Phase 3: Technical Validation
 
 - Treat this as the main bottleneck for submission readiness.
-- Replace weak validation with a defensible validation design.
+- Replace weak validation with a defensible extraction-validation design.
+- Define exactly which extraction-correctness claims the section supports.
+- Report field-level or grouped-field metrics with uncertainty, not point estimates alone.
 - Increase and justify sample size statistically.
 - Use stratified sampling:
   - discipline
   - document length
   - extraction outcome category
-- Validate extraction quality with stronger baselines where useful.
+- Validate extraction quality with stronger baselines or scalable support where useful.
 - Use scalable judging or review methodology where manual validation alone is too small.
 - Add corpus-level descriptive statistics:
   - field coverage
   - extraction coverage
-  - query normalization success
+  - abstention patterns
   - outlier inspection
 - Add failure-mode discussion, not just headline validation scores.
 - Make clear what validation supports and what remains uncertain.
