@@ -1,0 +1,97 @@
+** Please ensure you delete the link to your author homepage in this e-mail if you wish to forward it to your coauthors ** 
+
+Manuscript Number: SDATA-22-01044 
+Manuscript Title: STEREO: Scientific Text Reuse in Open Access Publications 
+Corresponding Author: Mr Gienapp 
+
+Dear Mr Gienapp, 
+
+Your manuscript entitled "STEREO: Scientific Text Reuse in Open Access Publications" has now been seen by the referee(s), whose comments are appended below. As you will see, the referees were supportive, but they raised important points and made suggestions for modifications, which they felt must be addressed before this work would be acceptable for publication at Scientific Data. 
+
+Based on this assessment, we therefore invite you to revise and resubmit your manuscript, taking into account the points raised. 
+
+* Please add your complete email addresses to the corresponding author list 
+
+* Please change the DOI in the data citation for Zenodo to a full URL, format https://doi.org/XXXXXXX 
+
+At the same time, we ask that you ensure your manuscript complies with our format requirements explained in full in our Submission Guidelines: 
+https://www.nature.com/sdata/publish/submission-guidelines 
+
+* Please ensure that your references conform fully to the Nature style. See the examples at the link below: 
+
+https://www.nature.com/sdata/publish/submission-guidelines#refs> 
+
+Please use the following link to submit a revised paper and a point-by-point response to the referees: 
+
+<redacted>
+
+** This url links to your confidential homepage and associated information about manuscripts you may have submitted or be reviewing for us. If you wish to forward this email to co-authors, please delete the link to your homepage first ** 
+
+REVISION CHECKLIST: 
+
+In order to process your revised manuscript, we will require the following items: 
+
+* A cover letter describing your response to our editorial requests. 
+
+* A point-by-point response to any issues raised by our referees. 
+
+* The revised version of your text as a Word or TeX/LaTeX file with all changes highlighted. 
+
+* The final versions of any Supplementary Information files. 
+
+* Publication quality figures in the TIFF, EPS, or PDF formats. 
+
+* Final accession numbers or DOIs for any deposited datasets. 
+
+Any authors who have an ORCID and want it to appear on the final publication should add it to their account before you resubmit your revision. ORCIDs may not be added to our system after a paper has been accepted for publication. 
+
+We hope to receive your revised paper within one month. If you cannot send it within this time, please let us know. 
+
+We look forward to receiving your revised manuscript. 
+
+Sincerely, 
+
+Dr Guy Jones 
+Chief Editor 
+Scientific Data 
+
+--------------- 
+
+
+Comments from the Editorial Board Member and Reviewers: 
+
+Reviewer #1 (Remarks to the Authors): 
+
+The article has been revised according to the reviewer's suggestions and in my view is a good improvement over the original. You have taken on board the comments and the article provides a helpful addition to the text reuse research community. 
+
+Reviewer #2 (Remarks to the Authors): 
+
+1. The authors have addressed many of the suggested edits from the reviewers, and clarified a lot of issues that were hard to understand for this reviewer in version 1. I have some relatively minor comments that I trust can be addressed by the authors without a new round of peer review, but that I hope will make the paper more accessible. 
+
+2. It is not clear by just reading the abstract, if all 91 million cases of reused text passages found in this dataset were small chunks of 8 words or more or were all of these longer chunks of text. Perhaps adding a couple of words clarifying the threshold (8 words) here would be very helpful. 
+
+3. The newly provided table with some examples was very helpful. By manually checking some of these article-pairs, it appears many examples consisted of similarities between text from the Methods written by the same authors, or standard statements found in the required Conflict of interest and Acknowledgments sections of a paper. In that light, I appreciate the clear distinction between text reuse and plagiarism as the authors make e.g. at the bottom of page 2/14. The three examples chosen for Table 6 are also a very good reflection of these fairly innocent cases. However, it might be helpful if the paragraph on "Applications and Examples" might extend a bit more on that, given that most of the cases of text reuse found in this paper might be innocent, i.e. short methods phrases re-used by the same authors or journal-required verbiage at contributions sections of the paper. Most readers might immediately think of plagiarism if they read about text-reuse, and the authors of this
+study might put a bit more emphasis on listing 'innocent' cases which appear to constitute the vast majority of the found textual similarities. I hope the authors can therefore expand this paragraph a bit - Just one or two additional sentences in this paragraph would be helpful - to make it more clear that the majority of the found cases of text reuse appear to be innocent and not plagiarism. This might also be important to add to the abstract - as long as it does not violate the principles of this journal. Otherwise, there is the danger that a hasty reader or journalist might interpret the abstract as "91 million cases of plagiarism found!" - a bit more emphasis on harmless cases of text reuse might be helpful. 
+
+[Editor's note - please do make this change, it is a v.helpful suggestion to mitigate any possible misinterpretation and not against any policy of the journal] 
+
+4. In that same light, the authors might expand a bit on their suggested use of filters, as mentioned in Applications and Examples. Which types of filters would they suggest? One obvious one for a researcher interested in e.g. plagiarism would be to exclude pairs that share one or more authors. In addition, one might want to exclude boilerplate sentences in journal-required contribution statements, or apply a filter to exclude instances of text reuse in the Methods section. Thirdly, perhaps a filter to only include paper pairs that have e.g. 3 or more stretches of 8-words might be helpful. Would any of these types of useful filters be possible with the current format of the dataset? 
+5. Some small typos and other remarks: 
+Page 2/14: "consvervative" 
+Page 7/14, bottom: "YSince" 
+On page 7, what is meant by "where two different authors reproduce verbatim one of a third" - I understand they are both using the same quote, but I did not get the "third" part. 
+
+Signed, Elisabeth Bik
+
+If you no longer wish to receive any email correspondence from this journal, please click the link below to unsubscribe https://mts-scidata.nature.com/cgi-bin/main.plex?el=A1CZ6CQCr2A1KeEA1BX5A9ftdaEJQmH3ovWwcp6HgOUia2QZ
+
+
+This email has been sent through the NPG Manuscript Tracking System NY-610A-NPG&MTS
+
+Confidentiality Statement:
+
+This e-mail is confidential and subject to copyright. Any unauthorised use or disclosure of its contents is prohibited. If you have received this email in error please notify our Manuscript Tracking System Helpdesk team at http://platformsupport.nature.com .
+
+Details of the confidentiality and pre-publicity policy may be found here http://www.nature.com/authors/policies/confidentiality.html
+
+Privacy Policy | Update Profile

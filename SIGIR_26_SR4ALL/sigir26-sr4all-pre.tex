@@ -1,0 +1,75 @@
+\title{Webis-SR4ALL-26: A Large-Scale Multi-Domain Corpus for Systematic Review Retrieval and Screening}
+\title{A Large-Scale Corpus of Systematic Reviews in All Sciences}
+\title{A Large-Scale Multi-Domain Corpus of Systematic Reviews}
+\title{A Large-Scale, Cross-Disciplinary Corpus of Systematic Reviews}
+
+
+\settopmatter{authorsperrow=5}
+
+\author{Pierre Achkar}
+% \email{pierre.achkar@uni-leipzig.de}
+\affiliation{%
+  \institution{Leipzig University; Fraunhofer ISI}
+  % \city{Leipzig}
+  \country{}
+}
+
+\author{Tim Gollub}
+% \email{tim.gollub@uni-weimar.de}
+\affiliation{%
+  \institution{Bauhaus-Universität Weimar}
+  % \city{Weimar}
+  \country{}
+}
+
+\author{Arno Simons}
+% \email{tim.gollub@uni-weimar.de}
+\affiliation{%
+  \institution{\mbox{TU Berlin}}
+  % \city{Weimar}
+  \country{}
+}
+
+\author{Harrisen Scells}
+% \email{harrisen.scells@uni-tuebingen.de}
+\affiliation{%
+  \institution{University of Tübingen}
+  % \city{Tübingen}
+  \country{}
+}
+
+\author{Martin Potthast}
+% \email{martin.potthast@uni-kassel.de}
+\affiliation{%
+  \institution{Kassel University; hessian.AI; ScaDS.AI}
+  % \city{Kassel}
+  \country{}
+}
+
+\begin{abstract}
+Existing benchmarks for systematic reviewing remain limited either in scale or in disciplinary coverage, with some collections comprising only a modest number of topics and others focusing primarily on biomedical research. We present Webis-SR4ALL-26, a large-scale, cross-disciplinary corpus of 301,871~systematic reviews spanning all scientific fields as covered by OpenAlex.
+% Using a multi-stage pre-processing pipeline, we extract and standardize retrieval- and screening-related metadata from each review to enable reproducible, large-scale retrieval, screening, and extraction experiments as well as comparative meta-science research.
+Using a multi-stage pre-processing pipeline, we link reviews to resolved OpenAlex metadata and reference lists and extract, when explicitly reported, structured method artifacts relevant to retrieval and screening. 
+% The extracted metadata includes the Boolean queries originally used to retrieve candidate papers, inclusion and exclusion criteria for screening, and the set of papers ultimately cited by the review. To demonstrate how the corpus can foster IR~research on systematic reviewing, we conducted an initial series of large-scale baseline retrieval experiments. As part of the resource, we release the pre-processing pipeline for metadata extraction and experiments to validate its quality. Our resource is a first step toward making deep research agents for science amenable to experimentation at scale. We discuss our goals for future metadata extraction to support systematic review synthesis. 
+These artifacts include reported search strategies (Boolean queries or keyword lists) that we normalize into executable approximations, as well as reported inclusion and exclusion criteria. Together, these layers support cross-domain benchmarking of retrieval and screening components against review reference lists, training and evaluation of extraction methods for review artifacts, and comparative meta-science analyses of systematic review practices across disciplines and time. To demonstrate one concrete use case, we report large-scale baseline retrieval signals by executing normalized search strategies in OpenAlex and comparing retrieved sets to resolved reference lists. We release the corpus and the pre-processing pipeline, along with code used for extraction validation and the retrieval demonstration.%
+\footnote{%
+\url{https://github.com/webis-de/sigir26-sr4all}, \url{https://doi.org/10.5281/zenodo.18431942}}
+\end{abstract}
+
+
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10002951.10003317</concept_id>
+       <concept_desc>Information systems~Information retrieval</concept_desc>
+       <concept_significance>500</concept_significance>
+   </concept>
+</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Information systems~Information retrieval}
+
+\keywords{Systematic reviews, Cross-Disciplinary, Retrieval, Screening}
+
+\maketitle
+

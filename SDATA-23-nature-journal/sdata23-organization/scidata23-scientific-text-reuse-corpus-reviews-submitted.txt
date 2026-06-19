@@ -1,0 +1,115 @@
+Manuscript Number: SDATA-22-00057 
+Manuscript Title: STEREO: Scientific Text Reuse in Open Access Publications 
+Corresponding Author: Mr Gienapp 
+
+Dear Mr Gienapp, 
+
+Please accept my sincere apologies for the unusually long delay in providing you with a decision on your manuscript and the inconvenience this may have caused. Unfortunately it took longer than expected to secure reviewers in this instance. Furthermore, one of the reviewers became unresponsive and did not return a report causing further delays. 
+
+Your manuscript entitled "STEREO: Scientific Text Reuse in Open Access Publications" has now been reviewed. A copy of the reviewers comments are appended below. In the light of their advice I regret to inform you that we cannot offer to publish your manuscript in Scientific Data, in its current form. 
+
+You will see that, while your work is of interest, substantive concerns were raised that the handling Editorial Board member felt cast doubt on the dataset presented here and its suitability for broader use in the community. Unfortunately, these reservations are sufficiently important to preclude publication of this study in Scientific Data. 
+
+We would however be willing to consider a new, substantially improved version of this work if you can address the concerns raised by the reviewers in full. 
+
+While Data Descriptors should avoid in-depth analysis and data interpretation, we feel that the suggestions made by the reviewers could be appropriate in the Technical Validation section to support the quality of the database and rigour of the curation process. Examples or re-use cases could also be described in our optional Usage Notes section. 
+
+Any such improved version would be considered as a new submission, and would receive a new submission date. If you decide to resubmit please state the manuscript ID of this submission in your cover letter, and provide a point-by-point response to the reviewers' comments. 
+
+Thank you for the opportunity to consider your work. I am sorry that we cannot be more positive on this occasion and hope you will not be deterred from submitting future work to Scientific Data. 
+
+Sincerely, 
+
+Veronique 
+
+Veronique van den Berghe, PhD 
+Senior Editor 
+Scientific Data 
+
+--------------- 
+
+The Editorial Board Member for this manuscript was Tim Althoff. 
+
+
+Comments from the Editorial Board Member and Reviewers': 
+
+Editorial Board Member (Comments to the Author): 
+
+Both reviewers expressed the potential of these data to other researchers. However, they also identified several significant concerns: 
+- the paper is written in a way that made it difficult for text reuse researchers to follow and use 
+- the reviewer reported similar concerns about the data 
+- the paper could be improved through further examples of reuse, more justification around the approach used and how a relationship of similarity can also faithfully capture reuse, and also some analysis about text reuse within the corpus could have been provided. 
+- in particular, the connection between similarity and (inappropriate) reuse needs more clarification and validation 
+- potential ethical concerns need to be addressed and at least discussed 
+
+Collectively, these concerns limit the potential reach and utility of this paper/dataset to other researchers. We hope that the reviewer feedback will be helpful to the authors in increasing the dataset's utility and impact on the field. 
+
+
+Reviewer #1 (Remarks to the Authors): 
+
+In this paper, a large dataset of text reuse examples is calculated and described. This is a potentially very useful dataset for further analysis and of great interest for people working in research integrity or metascience. 
+The authors used a dataset of 6 million unique open access DOIs in the CORE database to extract the plain text of these articles, excluding references, tables, etc. The resulting 4 million documents were then manually mapped to scientific disciplines. To limit computational effort, the authors then describe that they only looked for pairs that were likely to share text. Then, using chunks of words, the texts were compared to each other using alignments of first short fragments, then longer chunks on a 12 CPU cluster, in (if I understand correctly) a fascinating timespan of 2 months of preprocessing, followed by 3.5 months of text alignment. A total of 91 million cases of text reuse were identified. 
+Unfortunately, most of the methods were hard to comprehend, there were no results shown or discussed, and the results could not be downloaded in a useful format for this reviewer. The text is presumably written for a computer science audience, not for people with an interest in plagiarism. General points of feedback are: 
+1. How did the authors limit the comparison to only include papers that were likely to share text? This part, described in 'Text Reuse Detection in Large Document Collections' sounded very vague. How did the authors which papers were likely to share text? Did they use the assigned disciplines and only limited the search to pairs that fell into the same disciplines? Did they base this on e.g. text in the title? Or Is this the part that is described more closely under "Source Retrieval"? In other words, is the section called "source retrieval" the part where the documents are matched first? This was not clear. 
+2. The math/symbols and jargon in the text were difficult for a person with no background in computer science, in particular in the "Source Retrieval" section. I am not sure who the intended audience of this paper is, but my background in biomedical science was not enough to understand expressions such as 'linear time complexity ', 'locality-sensitive hashing' 'locally bounded phenomenon', 'cartesian product', or 'hash-based source retrieval'. It would help if the authors could offer some additional sentences explaining what these concepts mean. Similarly, the formulas were way over my head, such as the one following the words 'if at least one of their passage-level hash sets intersects' means, or even what "hash sets" means. So I could not peer review most of the methods. 
+3. The results are provided as two large dataset on Zenodo. The smaller set consisted of just lists of DOIs without annotation of which texts were reused where which seemed not very useful. The larger set - presumably containing the text similarity sets - was provided as a huge file in JSON format and I was not sure how to download this or read it. Could the authors maybe provide an easy-to-review set of e.g. 100 cases of text reuse so I could review these? A plagiarism dataset with only one paper seems not very useful. I would have expected the results to be presented as paper 1 vs paper 2, not just a list of papers. 
+4. What was the minimum set of consecutive words that had to match in order to be counted as a pair? That seems to be an essential parameter, but I could not find this. 
+5. The paper would greatly benefit if there were some actual examples shown. I imagine that some text reuse is expected and allowed (e.g. parts of methods), while some other examples would suggest plagiarism. How does the output of the search look like? Does the output define which text is likely to be original, and which is not? 
+6. From my own experience, some review papers consist of many reused sentences, from multiple older sources, and I imagine that a visualization of some kind (e.g. network or heatmap) would show fascinating results. 
+7. I would personally love to have some part of this tool available to test smaller sets of papers, e.g. a set of 20 papers suspected to be similar, and have an output in a format that would visualize (e.g. highlight) the textual similarities. 
+8. The work of Debora Weber-Wulff (not this reviewer!) could be mentioned somewhere - her group has done a lot of work on plagiarism detection, and some credit could be given. 
+Minor remarks 
+9. On page 4, under 'Data Records' the text 'their metadata' is crossed out - maybe a remnant of a previous version? Please check. 
+10. On page 4, it says 'first involved publication as a, and to the second as b' - does this mean that paper a is the oldest and paper b the newest? 
+
+
+
+
+Reviewer #2 (Remarks to the Authors): 
+
+STEREO: Scientific Text Reuse in Open Access Publications 
+
+This paper introduces the STEREO-21 dataset for analysing text reuse in open access publications. The dataset comprises over 4 million articles across multiple disciplines and the authors claim this is the first and largest of its kind. 
+
+The paper is well-written and introduces the approaches take to build the publicly-available dataset. Existing approaches proven to work on existing PAN competition datasets but could also be scaled for dealing with the large corpus size were adopted. 
+
+The key contribution of the paper is introducing a new dataset, a method for constructing a suitable dataset of scientific articles and testing an existing approach for analysing text reuse in large volumes of data. 
+
+My main criticism would be that I feel the paper could have also provided further examples of reuse, more justification around the approach used and how a relationship of similarity can also faithfully capture reuse, and also some analysis about text reuse within the corpus could have been provided. 
+
+Introduction 
+
+• The introduction section provided clear justification for generating a corpus of examples from scientific literature. However, you could have also referenced text re-use in other fields, such as media and humanities literature to show the generality of the task. 
+• Overall, one of the questions I have about the work is how reuse if defined? Can you provide examples? Is it more than just cut and paste? Also, in scientific literature did you consider to capture reuse beyond the text, e.g. reuse of images, reuse of tables, reuse of ideas, etc.? 
+
+Methods 
+
+• You seem to imply that text reuse is equivalent to similarity (e.g., you state “identify whether they are sufficiently similar, indicating possible text reuse”). The question I have is how do you know whether it is reuse or written independently? Is there additional context or knowledge you have that can prove a reuse relationship between texts beyond similarity? Again, having a clear definition of text reuse from the outset would maybe help to distinguish. Also, do you infer anything about the direction of reuse (e.g., which text is the source or target)? Also, what happens if blocks are reused from multiple documents. Do you allow for this and reference multiple documents? 
+• How has text reuse been validated? Are you sure that there is a direct reuse relation between the articles or could there be indirect relations? Can you also be sure this is re-use? What could be done to infer the source and target? Text similarity is not the same as text reuse (although can be used to identify it). 
+• You seem to imply that paraphrasing may not occur as much in theses etc. Maybe student reuse is different from reuse as undertaken by proficient academics? In your validation step it would seem like your approach can identify paraphrased versions so this would then be dealt with. But could you find examples where the approach has not worked well (i.e., some failure analysis)? 
+• It wasn’t clear to me why the dataset only included data up to 2018? It would have been helpful to include a descriptive summary or profile of the dataset (e.g., age range, average size of articles, etc.). 
+• Which repositories were used to gather the PDFs? Are these available to download as a part of the dataset (or are they referenced in the metadata – it was unclear to me)? 
+• How accurate is the GORBID toolset at extracting plain text? Can you include some performance metrics. 
+• You state that you “cross-check and supplement the metadata provided by CORE with additional data from the Microsoft Open Academic Graph” – can you expand on this and say more. How was this done and what additional data was gathered? How were articles matched to the MAG? Using the DOI? 
+• For this step “we manually map the classification found in the Microsoft Open Academic Graph to the standardized, hierarchical DFG Classification of Scientific Disciplines, Research Areas, Review Boards and Subject Areas” – how was this manual mapping done? How many people did this? Was the process validated? How many categories are there? 
+• How representative is the dataset of scientific fields? Are there any collection or sampling biases? What is the number of articles across fields, for example? This could be included in a descriptive summary of the dataset. 
+• What other biases may have crept into the creation of the dataset? 
+• Do you ignore any matches from within the same text (e.g., abstract text could repeat content from the article)? 
+• The overall approach you adopt to identify is good – the two-step approach has been proven to help identify plagiarism in the past and also scales well to the size of dataset you are dealing with. Your approach has also been proven out during the PAN series of events. 
+
+Data Records 
+
+• The phrase “their metadata” has a strike-through font which I guess is an error and should be removed? 
+
+Technical Validation 
+
+• This stage helped to validate the approach against previously built PAN corpora. This showed that the performance was comparable to the best performing systems in the PAN competitions, but at the efficiency required to process such a large volume of texts. 
+
+Usage Notes 
+
+• “A wide range of research questions can be addressed based on the variety of case data contained in the Webis-STEREO-21” – can you provide examples of the kind of research questions that could be addressed? 
+• Are there any ethical issues with the dataset? Should academic authors have the ability to retract articles? Should consent be given by authors? Just because it is open science data doesn’t mean it should be used. What if the data was used unethically? For example, to publicise and target academics who reuse text legitimately? 
+
+Code Availability 
+
+• The code used to build the collection is freely available on Github – great. 

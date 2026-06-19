@@ -1,0 +1,7 @@
+\section*{Code Availability}
+
+%%% NOTES. (journal instructions)
+%%%
+%%% For all studies using custom code in the generation or processing of datasets, a statement must be included under the heading "Code availability", indicating whether and how the code can be accessed, including any restrictions to access. This section should also include information on the versions of any software used, if relevant, and any specific variables or parameters used to generate, test, or process the current dataset.
+
+The complete source code used for candidate retrieval and text alignment is openly accessible and permanently available on GitHub\footnote{\url{https://github.com/webis-de/arxiv21-stereo-scientific-text-reuse}}. The data processing pipeline is written in Python~3.7, utilizing the \texttt{pyspark} framework. The compute cluster on which we carried out the data processing and our experiments run Spark version~2.4.8. The text alignment component is written in Go~1.16 and can be used as a standalone application. Detailed documentation about each pipeline component, recommendations for compute resources, and suggestions for parameter choices are distributed alongside the code to facilitate code reuse.

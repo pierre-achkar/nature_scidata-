@@ -1,0 +1,21 @@
+\section*{Data Records}
+
+%%% NOTES. (journal instructions)
+%%%
+%%% The Data Records section should be used to explain each data record associated with this work, including the repository where this information is stored, and to provide an overview of the data files and their formats. Each external data record should be cited numerically in the text of this section, for example \cite{Hao:gidmaps:2014}, and included in the main reference list as described below. A data citation should also be placed in the subsection of the Methods containing the data-collection or analytical procedure(s) used to derive the corresponding record. Providing a direct link to the dataset may also be helpful to readers (\hyperlink{https://doi.org/10.6084/m9.figshare.853801}{https://doi.org/10.6084/m9.figshare.853801}).
+%%%
+%%% Tables should be used to support the data records, and should clearly indicate the samples and subjects (study inputs), their provenance, and the experimental manipulations performed on each (please see 'Tables' below). They should also specify the data output resulting from each data-collection or analytical step, should these form part of the archived record.}
+
+
+Two types of data records are included in the \webisReuseCorpus corpus: the reuse case data, which contains all identified cases of text reuse alongside their metadata, and the publication data for each individual document considered when computing the cases, including publication year and field of study annotations. The records can be cross-referenced using a publications' DOI as primary key. The corpus consists of two archive files: \texttt{cases.tar.gz} contains the reuse case data, while \texttt{publications.tar.gz} contains the publication data. Each of these archives bundles multiple partial files in the JSONL format, where every line corresponds to a unique JSON-encoded case or publication. The \webisReuseCorpus corpus is archived at Zenodo (\href{http://dx.doi.org/10.5281/zenodo.5575285}{\texttt{10.5281/zenodo.5575285}}\cite{zenodo-metadata}). 
+
+Each of the 91,466,374 identified cases of potential text reuse is represented as an individual entry, referencing two different publications. A pair of publications can contain multiple occurrences of text reuse, each of which is treated as a unique case and entry. Each case encompasses two kinds of metadata:
+\Ni
+\textit{locators}, which identify the matched text by its in-text location, using character offsets to mark start and end, and
+\Nii
+\textit{context} about the publications involved in the case both by year and by field of study.
+In the context of a case, we refer to the first involved publication as~\textit{a}, and to the second as~\textit{b}. This, however, does not indicate a directionality of reuse in terms of publication time. Table~\ref{tab:data-record-cases} gives a detailed overview on all data fields available.
+
+In the publication data, the metadata for all 4,267,166 documents considered for reuse computation is provided. Not every document is involved in at least one reuse case. Publications without detected reuse where included to help contextualize analyses derived from the case data, providing baseline data about distribution of metadata such as fields of study. Table~\ref{tab:data-record-publications} provides detailed information about the fields available for each publication. 
+
+%\bscom[]{We provide two versions of the corpus: a freely distributed ``metadata-only'' version (\href{http://dx.doi.org/10.5281/zenodo.5575285}{\texttt{10.5281/zenodo.5575285}})\cite{zenodo-metadata}, which includes locators and metadata, but not the text data, and an access-restricted complete version (\href{http://dx.doi.org/10.5281/zenodo.5575320}{\texttt{10.5281/zenodo.5575320}})\cite{zenodo-full}, which includes the text-complete cases.}{}

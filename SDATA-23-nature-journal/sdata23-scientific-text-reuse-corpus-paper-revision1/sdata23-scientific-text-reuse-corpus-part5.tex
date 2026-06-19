@@ -1,0 +1,48 @@
+\section*{Usage Notes}
+
+%%% NOTES. (journal instructions)
+%%%
+%%% The Usage Notes should contain brief instructions to assist other researchers with reuse of the data. This may include discussion of software packages that are suitable for analysing the assay data files, suggested downstream processing steps (e.g. normalization, etc.), or tips for integrating or comparing the data records with other datasets. Authors are encouraged to provide code, programs or data-processing workflows if they may help others understand or use the data. Please see our code availability policy for advice on supplying custom code alongside Data Descriptor manuscripts. For studies involving privacy or safety controls on public access to the data, this section should describe in detail these controls, including how authors can apply to access the data, what criteria will be used to determine who may access the data, and any limitations on data use.
+
+\subsection*{Applications and Examples}
+
+Based on the diverse case data contained in the \webisReuseCorpus, a variety of research questions can be answered. These include the study of discipline-specific writing practices, comparative studies, and even a variety of machine learning tasks. The corpus includes a wide range of cases, and the operationalization of text reuse is deliberately chosen to capture many phenomena of reuse. Therefore, to answer a particular research question, filtering techniques are required to create a subset suitable for a given question. To illustrate the variety of cases, Table~\ref{tab:example-cases} shows three examples, each representing a different type of reuse. The first is a quotation, where two different authors reproduce verbatim one of a third. The second is an example of a paraphrase and comes from two different articles by the same author on the same subject. The third is an example of boilerplate text reuse, since both are contribution statements whose structure is highly formalized, the difference being the different contributions of different authors.
+
+\subsection*{Data Accessibility}
+
+The dataset is distributed as JSONL~files of reuse case metadata to enable efficient streaming and filtering even with low computational resources. Since some analyses require the text of the reuse cases \webisReuseCorpus, researchers can hydrate the corpus using the text preprocessing component of our processing pipeline, which is included with the dataset as a standalone Python script. This enables the conversion of GROBID extraction results, e.g. from the CORE repository, into a compatible text format so that the locators contained in the dataset can be used to recover the text portions of individual reuse cases. Since the publications the corpus is based upon are open access, the original PDF~files can be easily retrieved by their~DOI, further lowering the barrier of access. We also provide the code used to compute the corpus statistics in this article to give others interested in working with the data an example of use.
+
+\subsection*{Ethical Considerations}
+
+Our dataset includes contemporary scientific texts (``papers'') with the goal of examining the occurrence, nature, and types of text reuse that result from scientific writing practices. Given general ethical considerations for datasets \cite{peng:2021}, three are particularly relevant to the proposed collection:
+\Ni
+privacy of the individuals included in the data, 
+\Nii
+effects of biases on downstream use, and
+\Niii
+dataset usage for dubious purposes.
+We therefore took into account a consensus on best-practices for ethical dataset creation \cite{mieskes:2017,leidner:2017,gebru:2021}.
+
+Ad~(1).
+While the corpus does not contain author names or identifiers, all included papers are freely accessible, so it is possible to determine the identity of individual authors by referring to the original CORE/OAG~data or simply by accessing a~DOI. However, we do not consider this to be problematic, since all those who participate professionally in scientific discourse agree, by publishing their contributions, that they will go down in the scientific annals under their name and that they can be examined by anyone. This is especially true for articles under an open access license, where consent to create derivative works, public archiving, and exploitation is implied.
+
+Ad~(2). 
+Two types of bias can arise from our process of dataset curation. First, by using only open access publications, the types, disciplines, and characteristics of the papers included may not be representative of science as a whole. YSince it is not yet possible to analyze all scientific papers ever published, we try to minimize this risk by using as large a sample as possible. Second, the operationalization and implementation of text reuse may vary for more specific research questions on this topic. Our goal was therefore to employ a very general and inclusive detection approach. For downstream tasks, some of the cases included are not interesting, and the data can filtered to obtain a more targeted collection. Moreover, by reproducibly documenting its creation process, we aim to maximize its extensibility in the future.
+
+Ad~(3).
+We estimate the potential for misuse of the dataset to be low. One contentious issue is the use of the dataset to broadly target academics on their writing practices. However, this has not been done with previously published text reuse datasets. The novelty of this dataset compared to previous datasets is the scope, from which no new doubtful use cases emerge. Furthermore, the dataset explicitly refrains from classifying the legitimacy of reuse cases. Both the operationalization of the term and its intended use are intended to examine all types and techniques of reuse of text in science, not plagiarism in particular.
+
+
+%%% OLD.
+%% Our dataset is a collection of texts and metadata obtained from publicly available sources, assembled with respect to their terms and conditions. It has been published in a context of academic research, no new personal information will be disclosed, and additional privacy protection measures in making the data accessible should not be necessary.
+%% All sources were acknowledged appropriately. Our contribution is not in the collection of the base data, but in assembling and enhancing it, and does not interfere with services provided by our data sources. The corpus cannot be used as a substitute for the OAG or CORE itself, but makes use of qualities of both data sources for its own, specific field of academic research.
+%% The origin of data is made transparent in this paper, as well as in the dataset itself by adding metadata that reflect on the respective origin. 
+%% All papers in the dataset have been published under an open access compatible license, as indicated and harvested by CORE. 
+%% The dataset is meant for machine processing the included text, not for reading purposes. 
+%% We have no intention of monetizing on the content of the dataset, nor to restrict access for anyone using the provided data under open access conditions.
+
+
+%%% NOTE: any authorship-related ethics statements.
+%%% as the largest corpus so far, we might allow more acteurs better data for building academic-domain machine learning models ?
+
+

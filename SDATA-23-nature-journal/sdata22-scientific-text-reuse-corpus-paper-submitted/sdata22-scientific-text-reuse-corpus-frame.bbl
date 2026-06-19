@@ -1,0 +1,277 @@
+\begin{thebibliography}{10}
+\urlstyle{rm}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname doiprefix\endcsname\relax\def\doiprefix{DOI: }\fi
+\providecommand{\bibinfo}[2]{#2}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{sun:2015}
+\bibinfo{author}{Sun, Y.-C.} \& \bibinfo{author}{Yang, F.-Y.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Uncovering published authors'
+  text-borrowing practices: Paraphrasing strategies, sources, and
+  self-plagiarism}}.
+\newblock {\emph{\JournalTitle{Journal of English for Academic Purposes}}}
+  \textbf{\bibinfo{volume}{20}}, \bibinfo{pages}{224--236},
+  \url{10.1016/j.jeap.2015.05.003} (\bibinfo{year}{2015}).
+
+\bibitem{anson:2020}
+\bibinfo{author}{Anson, I.~G.} \& \bibinfo{author}{Moskovitz, C.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Text recycling in stem: A
+  text-analytic study of recently published research articles}}.
+\newblock {\emph{\JournalTitle{Accountability in Research}}}
+  \textbf{\bibinfo{volume}{28}}, \bibinfo{pages}{349 -- 371}
+  (\bibinfo{year}{2020}).
+
+\bibitem{moskovitz:2015}
+\bibinfo{author}{Moskovitz, C.}
+\newblock \bibinfo{journal}{\bibinfo{title}{{Self-Plagiarism, Text Recycling,
+  and Science Education}}}.
+\newblock {\emph{\JournalTitle{BioScience}}} \textbf{\bibinfo{volume}{66}},
+  \bibinfo{pages}{5--6}, \url{10.1093/biosci/biv160} (\bibinfo{year}{2015}).
+\newblock
+  \eprint{https://academic.oup.com/bioscience/article-pdf/66/1/5/7459167/biv160.pdf}.
+
+\bibitem{hall:2018}
+\bibinfo{author}{Hall, S.}, \bibinfo{author}{Moskovitz, C.} \&
+  \bibinfo{author}{Pemberton, M.~A.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Attitudes toward text recycling in
+  academic writing across disciplines}}.
+\newblock {\emph{\JournalTitle{Accountability in Research}}}
+  \textbf{\bibinfo{volume}{25}}, \bibinfo{pages}{142--169},
+  \url{10.1080/08989621.2018.1434622} (\bibinfo{year}{2018}).
+\newblock \eprint{https://doi.org/10.1080/08989621.2018.1434622}.
+
+\bibitem{bird:2002}
+\bibinfo{author}{Bird, S.~J.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Self-plagiarism and dual and
+  redundant publications: What is the problem?}}
+\newblock {\emph{\JournalTitle{Science and engineering ethics}}}
+  \textbf{\bibinfo{volume}{8}}, \bibinfo{pages}{543--544}
+  (\bibinfo{year}{2002}).
+
+\bibitem{wen:2007}
+\bibinfo{author}{Wen, Q.} \& \bibinfo{author}{Gao, Y.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Dual publication and academic
+  inequality}}.
+\newblock {\emph{\JournalTitle{International Journal of Applied Linguistics}}}
+  \textbf{\bibinfo{volume}{17}}, \bibinfo{pages}{221--225}
+  (\bibinfo{year}{2007}).
+
+\bibitem{eberle:2013}
+\bibinfo{author}{Eberle, M.~E.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Paraphrasing, plagiarism, and
+  misrepresentation in scientific writing}}.
+\newblock {\emph{\JournalTitle{Transactions of the Kansas Academy of Science
+  (1903-)}}} \textbf{\bibinfo{volume}{116}}, \bibinfo{pages}{157--167}
+  (\bibinfo{year}{2013}).
+
+\bibitem{ganascia:2014}
+\bibinfo{author}{Ganascia, J.-G.}, \bibinfo{author}{Glaudes, P.} \&
+  \bibinfo{author}{Del~Lungo, A.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Automatic detection of reuses and
+  citations in literary texts}}.
+\newblock {\emph{\JournalTitle{Literary and Linguistic Computing}}}
+  \textbf{\bibinfo{volume}{29}}, \bibinfo{pages}{412--421},
+  \url{10.1093/llc/fqu020} (\bibinfo{year}{2014}).
+
+\bibitem{citron:2015}
+\bibinfo{author}{Citron, D.~T.} \& \bibinfo{author}{Ginsparg, P.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Patterns of text reuse in a
+  scientific corpus}}.
+\newblock {\emph{\JournalTitle{Proceedings of the National Academy of
+  Sciences}}} \textbf{\bibinfo{volume}{112}}, \bibinfo{pages}{25--30},
+  \url{10.1073/pnas.1415135111} (\bibinfo{year}{2015}).
+\newblock \eprint{https://www.pnas.org/content/112/1/25.full.pdf}.
+
+\bibitem{horbach:2019}
+\bibinfo{author}{Horbach, S.~S.} \& \bibinfo{author}{Halffman, W.~W.}
+\newblock \bibinfo{journal}{\bibinfo{title}{The extent and causes of academic
+  text recycling or ‘self-plagiarism’}}.
+\newblock {\emph{\JournalTitle{Research Policy}}}
+  \textbf{\bibinfo{volume}{48}}, \bibinfo{pages}{492--502}
+  (\bibinfo{year}{2019}).
+
+\bibitem{stein:2007d}
+\bibinfo{author}{Stein, B.}, \bibinfo{author}{{Meyer zu Ei{\ss}en}, S.} \&
+  \bibinfo{author}{Potthast, M.}
+\newblock \bibinfo{title}{{Strategies for Retrieving Plagiarized Documents}}.
+\newblock In \bibinfo{editor}{Clarke, C.}, \bibinfo{editor}{Fuhr, N.},
+  \bibinfo{editor}{Kando, N.}, \bibinfo{editor}{Kraaij, W.} \&
+  \bibinfo{editor}{{de Vries}, A.} (eds.) \emph{\bibinfo{booktitle}{30th
+  International ACM Conference on Research and Development in Information
+  Retrieval (SIGIR 2007)}}, \bibinfo{pages}{825--826},
+  \url{10.1145/1277741.1277928} (\bibinfo{publisher}{ACM},
+  \bibinfo{address}{New York}, \bibinfo{year}{2007}).
+
+\bibitem{knoth:2012}
+\bibinfo{author}{Knoth, P.} \& \bibinfo{author}{Zdr{\'{a}}hal, Z.}
+\newblock \bibinfo{journal}{\bibinfo{title}{{CORE:} three access levels to
+  underpin open access}}.
+\newblock {\emph{\JournalTitle{D Lib Mag.}}} \textbf{\bibinfo{volume}{18}},
+  \url{10.1045/november2012-knoth} (\bibinfo{year}{2012}).
+
+\bibitem{lopez:2015}
+\bibinfo{author}{Lopez, P.} \& \bibinfo{author}{Romary, L.}
+\newblock \bibinfo{journal}{\bibinfo{title}{{GROBID} - information extraction
+  from scientific publications}}.
+\newblock {\emph{\JournalTitle{{ERCIM} News}}} \textbf{\bibinfo{volume}{2015}}
+  (\bibinfo{year}{2015}).
+
+\bibitem{tang:2008}
+\bibinfo{author}{Tang, J.} \emph{et~al.}
+\newblock \bibinfo{title}{Arnetminer: extraction and mining of academic social
+  networks}.
+\newblock In \bibinfo{editor}{Li, Y.}, \bibinfo{editor}{Liu, B.} \&
+  \bibinfo{editor}{Sarawagi, S.} (eds.) \emph{\bibinfo{booktitle}{Proceedings
+  of the 14th {ACM} {SIGKDD} International Conference on Knowledge Discovery
+  and Data Mining, Las Vegas, Nevada, USA, August 24-27, 2008}},
+  \bibinfo{pages}{990--998}, \url{10.1145/1401890.1402008}
+  (\bibinfo{publisher}{{ACM}}, \bibinfo{year}{2008}).
+
+\bibitem{sinha:2015}
+\bibinfo{author}{Sinha, A.} \emph{et~al.}
+\newblock \bibinfo{title}{An overview of microsoft academic service {(MAS)} and
+  applications}.
+\newblock In \bibinfo{editor}{Gangemi, A.}, \bibinfo{editor}{Leonardi, S.} \&
+  \bibinfo{editor}{Panconesi, A.} (eds.) \emph{\bibinfo{booktitle}{Proceedings
+  of the 24th International Conference on World Wide Web Companion, {WWW} 2015,
+  Florence, Italy, May 18-22, 2015 - Companion Volume}},
+  \bibinfo{pages}{243--246}, \url{10.1145/2740908.2742839}
+  (\bibinfo{publisher}{{ACM}}, \bibinfo{year}{2015}).
+
+\bibitem{dfg:2016}
+\bibinfo{author}{{Deutsche Forschungsgemeinschaft}}.
+\newblock \bibinfo{title}{{DFG} classification of scientific disciplines,
+  research areas, review boards and subject areas}.
+\newblock
+  \bibinfo{howpublished}{\url{https://web.archive.org/web/20201126170513/https://www.dfg.de/download/pdf/dfg_im_profil/gremien/fachkollegien/amtsperiode_2016_2019/fachsystematik_2016-2019_en_grafik.pdf}}
+  (\bibinfo{year}{2016}).
+\newblock \bibinfo{note}{Accessed on 2021-05-27}.
+
+\bibitem{potthast:2013e}
+\bibinfo{author}{Potthast, M.} \emph{et~al.}
+\newblock \bibinfo{title}{{Overview of the 5th International Competition on
+  Plagiarism Detection}}.
+\newblock In \bibinfo{editor}{Forner, P.}, \bibinfo{editor}{Navigli, R.} \&
+  \bibinfo{editor}{Tufis, D.} (eds.) \emph{\bibinfo{booktitle}{Working Notes
+  Papers of the CLEF 2013 Evaluation Labs}}, vol. \bibinfo{volume}{1179} of
+  \emph{\bibinfo{series}{Lecture Notes in Computer Science}}
+  (\bibinfo{year}{2013}).
+
+\bibitem{hagen:2015e}
+\bibinfo{author}{Hagen, M.}, \bibinfo{author}{Potthast, M.} \&
+  \bibinfo{author}{Stein, B.}
+\newblock \bibinfo{title}{{Source Retrieval for Plagiarism Detection from Large
+  Web Corpora: Recent Approaches}}.
+\newblock In \bibinfo{editor}{Cappellato, L.}, \bibinfo{editor}{Ferro, N.},
+  \bibinfo{editor}{Jones, G.} \& \bibinfo{editor}{{San Juan}, E.} (eds.)
+  \emph{\bibinfo{booktitle}{Working Notes Papers of the CLEF 2015 Evaluation
+  Labs}}, vol. \bibinfo{volume}{1391} of \emph{\bibinfo{series}{Lecture Notes
+  in Computer Science}} (\bibinfo{year}{2015}).
+
+\bibitem{hagen:2017e}
+\bibinfo{author}{Hagen, M.}, \bibinfo{author}{Potthast, M.},
+  \bibinfo{author}{Adineh, P.}, \bibinfo{author}{Fatehifar, E.} \&
+  \bibinfo{author}{Stein, B.}
+\newblock \bibinfo{title}{{Source Retrieval for Web-Scale Text Reuse
+  Detection}}.
+\newblock In \bibinfo{editor}{Lim, E.-P.} \emph{et~al.} (eds.)
+  \emph{\bibinfo{booktitle}{26th ACM International Conference on Information
+  and Knowledge Management (CIKM 2017)}}, \bibinfo{pages}{2091--2094},
+  \url{10.1145/3132847.3133097} (\bibinfo{publisher}{ACM},
+  \bibinfo{year}{2017}).
+
+\bibitem{stein:2019c}
+\bibinfo{author}{Alshomary, M.} \emph{et~al.}
+\newblock \bibinfo{title}{{Wikipedia Text Reuse: Within and Without}}.
+\newblock In \bibinfo{editor}{Azzopardi, L.} \emph{et~al.} (eds.)
+  \emph{\bibinfo{booktitle}{Advances in Information Retrieval. 41st European
+  Conference on IR Research (ECIR 2019)}}, vol. \bibinfo{volume}{11437} of
+  \emph{\bibinfo{series}{Lecture Notes in Computer Science}},
+  \bibinfo{pages}{747--754}, \url{10.1007/978-3-030-15712-8\_49}
+  (\bibinfo{publisher}{Springer}, \bibinfo{address}{Berlin Heidelberg New
+  York}, \bibinfo{year}{2019}).
+
+\bibitem{broder:97}
+\bibinfo{author}{Broder, A.~Z.}
+\newblock \bibinfo{title}{On the resemblance and containment of documents}.
+\newblock In \bibinfo{editor}{Carpentieri, B.}, \bibinfo{editor}{Santis,
+  A.~D.}, \bibinfo{editor}{Vaccaro, U.} \& \bibinfo{editor}{Storer, J.~A.}
+  (eds.) \emph{\bibinfo{booktitle}{Compression and Complexity of {SEQUENCES}
+  1997, Positano, Amalfitan Coast, Salerno, Italy, June 11-13, 1997,
+  Proceedings}}, \bibinfo{pages}{21--29}, \url{10.1109/SEQUEN.1997.666900}
+  (\bibinfo{publisher}{{IEEE}}, \bibinfo{year}{1997}).
+
+\bibitem{potthast:2012b}
+\bibinfo{author}{Potthast, M.} \emph{et~al.}
+\newblock \bibinfo{title}{{Overview of the 4th International Competition on
+  Plagiarism Detection}}.
+\newblock In \bibinfo{editor}{Forner, P.}, \bibinfo{editor}{Karlgren, J.} \&
+  \bibinfo{editor}{Womser-Hacker, C.} (eds.) \emph{\bibinfo{booktitle}{Working
+  Notes Papers of the CLEF 2012 Evaluation Labs}} (\bibinfo{year}{2012}).
+
+\bibitem{stamatatos:2011}
+\bibinfo{author}{Stamatatos, E.}
+\newblock \bibinfo{journal}{\bibinfo{title}{Plagiarism detection using stopword
+  \emph{n}-grams}}.
+\newblock {\emph{\JournalTitle{J. Assoc. Inf. Sci. Technol.}}}
+  \textbf{\bibinfo{volume}{62}}, \bibinfo{pages}{2512--2527},
+  \url{10.1002/asi.21630} (\bibinfo{year}{2011}).
+
+\bibitem{zenodo-metadata}
+\bibinfo{author}{Gienapp, L.}, \bibinfo{author}{Kircheis, W.},
+  \bibinfo{author}{Bjarne, S.}, \bibinfo{author}{Stein, B.} \&
+  \bibinfo{author}{Potthast, M.}
+\newblock \bibinfo{title}{{Webis-STEREO-21 Corpus (Metadata Only Version)}}.
+\newblock \bibinfo{howpublished}{Zenodo}, \url{10.5281/zenodo.5575285}
+  (\bibinfo{year}{2021}).
+
+\bibitem{potthast:2013}
+\bibinfo{author}{Potthast, M.} \emph{et~al.}
+\newblock \bibinfo{title}{{Overview of the 5th International Competition on
+  Plagiarism Detection}}.
+\newblock In \bibinfo{editor}{Forner, P.}, \bibinfo{editor}{Navigli, R.} \&
+  \bibinfo{editor}{Tufis, D.} (eds.) \emph{\bibinfo{booktitle}{Working Notes
+  Papers of the CLEF 2013 Evaluation Labs}} (\bibinfo{year}{2013}).
+
+\bibitem{vroniplag:2021}
+\bibinfo{author}{{Various Authors}}.
+\newblock \bibinfo{title}{{V}roniplag {W}iki}.
+\newblock \bibinfo{howpublished}{\url{https://vroniplag.fandom.com/}}
+  (\bibinfo{year}{2021}).
+\newblock \bibinfo{note}{Accessed: 2021-12-14}.
+
+\bibitem{potthast:2014}
+\bibinfo{author}{Potthast, M.} \emph{et~al.}
+\newblock \bibinfo{title}{{Overview of the 6th International Competition on
+  Plagiarism Detection}}.
+\newblock In \bibinfo{editor}{Cappellato, L.}, \bibinfo{editor}{Ferro, N.},
+  \bibinfo{editor}{Halvey, M.} \& \bibinfo{editor}{Kraaij, W.} (eds.)
+  \emph{\bibinfo{booktitle}{Working Notes Papers of the CLEF 2014 Evaluation
+  Labs}}, vol. \bibinfo{volume}{1180} of \emph{\bibinfo{series}{Lecture Notes
+  in Computer Science}} (\bibinfo{year}{2014}).
+
+\bibitem{pan:2012}
+\bibinfo{editor}{Forner, P.}, \bibinfo{editor}{Karlgren, J.} \&
+  \bibinfo{editor}{Womser-Hacker, C.} (eds.).
+\newblock \emph{\bibinfo{title}{{CLEF 2012 Evaluation Labs and Workshop --
+  Working Notes Papers, 17-20 September, Rome, Italy}}}
+  (\bibinfo{publisher}{CEUR-WS.org}, \bibinfo{year}{2012}).
+
+\bibitem{pan:2013}
+\bibinfo{editor}{Forner, P.}, \bibinfo{editor}{Navigli, R.} \&
+  \bibinfo{editor}{Tufis, D.} (eds.).
+\newblock \emph{\bibinfo{title}{{CLEF 2013 Evaluation Labs and Workshop --
+  Working Notes Papers, 23-26 September, Valencia, Spain}}}
+  (\bibinfo{publisher}{CEUR-WS.org}, \bibinfo{year}{2013}).
+
+\bibitem{pan:2014}
+\bibinfo{editor}{Cappellato, L.}, \bibinfo{editor}{Ferro, N.},
+  \bibinfo{editor}{Halvey, M.} \& \bibinfo{editor}{Kraaij, W.} (eds.).
+\newblock \emph{\bibinfo{title}{{Working Notes Papers of the CLEF 2014
+  Evaluation Labs}}}, CEUR Workshop Proceedings
+  (\bibinfo{publisher}{CEUR-WS.org}, \bibinfo{year}{2014}).
+
+\end{thebibliography}

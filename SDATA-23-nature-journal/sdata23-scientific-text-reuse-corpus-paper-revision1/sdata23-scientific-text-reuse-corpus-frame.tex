@@ -1,0 +1,166 @@
+\documentclass[fleqn,10pt]{wlscirep}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{type1cm}% CM-Fonts including math fonts in all sizes. Repairs 'Font shape OML/cmm/m/it in size <...> not available'.
+\usepackage{ae,aecompl}% Repairs 'Font shape T1/cmr/m/n in size <...> not available'.
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\hypersetup{colorlinks,allcolors=black}
+
+
+% Manuscript draft.
+%\usepackage{lineno}
+%\linenumbers
+
+% Figures and tables.
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{multicol}
+
+\usepackage{soul}
+\newcommand{\ctext}[3][RGB]{%
+  \begingroup
+  \definecolor{hlcolor}{#1}{#2}\sethlcolor{hlcolor}%
+  \hl{#3}%
+  \endgroup
+}
+
+\usepackage{graphicx}
+\DeclareGraphicsRule{.ai}{pdf}{*}{}% Handle .ai files as .pdf files.
+\DeclareGraphicsExtensions{.pdf,.ai,.jpg,.png}
+\setkeys{Gin}{pagebox=artbox}% Use artbox instead of mediabox default. Options: mediabox, cropbox, bleedbox, trimbox, artBox. (shell: pdfinfo -box <pdf-file>)
+\graphicspath{{../sdata23-scientific-text-reuse-corpus-figures/}}
+
+\newcommand{\bsfigure}[3][1.0]{%
+  % # scale
+  % #2 file name
+  % #3 caption
+  \begin{figure}[tb]
+    \centerline{\includegraphics[scale=#1]{#2}}
+    \vspace{-1ex}\caption{\small#3.}\label{#2}
+    % Alternative.
+    % \ifx#3\empty\else\vspace{-1ex}\caption{\small#3.}\label{#2}\fi
+    \vspace{0.5ex}\vglue 0ex plus 0.5ex minus 1ex
+  \end{figure}}
+
+
+
+% Itemization.
+\newcommand{\Ni}{(1)~}
+\newcommand{\Nii}{(2)~}
+\newcommand{\Niii}{(3)~}
+\newcommand{\Niv}{(4)~}
+\newcommand{\Nv}{(5)~}
+
+
+% Commenting.
+\newcommand{\todo}[1]{{\color{blue}#1}}
+
+\newif\ifbscomment
+\bscommentfalse
+\bscommenttrue% Show comments.
+
+\RequirePackage{xcolor}
+\RequirePackage{soul}
+\setstcolor{blue}
+
+\newsavebox\bscombox
+\newcommand{\bscom}[3][]{%
+    % #1 Optional comment.
+    % #2 Original text.
+    % #3 Replacement text.
+    \sbox{\bscombox}{\fontsize{8}{9}\selectfont#1#2#3}
+    \noindent
+    \st{#2}{\selectfont
+        \color{blue}#3\ifx\\#1\\\else{\color{violet}[#1]}\fi
+    }
+}
+
+
+% Paper commands.
+\usepackage{xspace}
+\newcommand{\webisReuseCorpus}{\texttt{Webis-STEREO-21}\xspace}
+
+
+% Global settings.
+\raggedbottom % \flushbottom
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+
+\input{sdata23-scientific-text-reuse-corpus-pre}
+\input{sdata23-scientific-text-reuse-corpus-part1}
+\input{sdata23-scientific-text-reuse-corpus-part2}
+\input{sdata23-scientific-text-reuse-corpus-part3}
+\input{sdata23-scientific-text-reuse-corpus-part4}
+\input{sdata23-scientific-text-reuse-corpus-part5}
+\input{sdata23-scientific-text-reuse-corpus-part6}
+
+%\bibliography{scidata22-scientific-text-reuse-corpus-lit}
+\input{sdata23-scientific-text-reuse-corpus-lit}
+
+\section*{Acknowledgments}
+% Acknowledgments should be brief, and should not include thanks to anonymous referees and editors, or effusive comments. Grant or contribution numbers may be acknowledged.
+This work was supported by grant no. 01PW18015B of the German Federal Ministry of Education and Research.
+
+
+\section*{Author Contributions Statement}
+
+L.G., M.P., W.K. and B.St.\ conceived the experiment. L.G. conducted the experiment. W.K. and B.Si.\ assembled the metadata and carried out the plain text extraction. All authors wrote and reviewed the manuscript.
+
+\section*{Competing Interests}
+
+% The corresponding author is responsible for providing a \href{https://www.nature.com/sdata/policies/editorial-and-publishing-policies#competing}{competing interests statement} on behalf of all authors of the paper. This statement must be included in the submitted article file.
+
+The authors declare no competing interests.
+
+\newpage
+\section*{Figures \& Tables}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{fig-pipeline}
+\caption{Schematic overview of the text reuse detection pipeline. Each document is pre-processed and supplied with metadata. Source retrieval identifies document pairs with local similarities, and alignment is applied to identify reuse cases between those.}
+\label{fig:pipeline}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\textwidth]{fig-alignment}
+\caption{Schematic overview of the text alignment process. Each document is divided into chunks, matching chunks are identified between documents, and matches are extended to whole reuse cases.}
+\label{fig:alignment}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\hbox to \textwidth{
+  \hfill
+  \includegraphics[width=.4\textwidth]{fig-lengths}
+  \qquad
+  \includegraphics[width=.4\textwidth]{fig-positions}
+  \hfill
+}
+\caption{Left side: cumulative ratio of reuse cases by normalized case length. Right side: cumulative ratio of reuse cases by normalized position.}
+\label{fig:distributions}
+\end{figure}
+
+\input{table-data-record-cases}
+\input{table-data-record-publications}
+%\input{table-pan13}
+%\input{table-pan13-individual}
+%\input{table-pan13-f1}
+%\input{table-pan13-f1-single}
+\input{table-pan13-f05-single}
+%\input{table-pan13-large}
+\input{table-pan13-evaluation}
+\input{table-discipline-distribution}
+\input{table-example-cases}
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

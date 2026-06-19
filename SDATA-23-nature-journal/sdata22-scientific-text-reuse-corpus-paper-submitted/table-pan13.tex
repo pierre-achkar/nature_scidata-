@@ -1,0 +1,49 @@
+\begin{table}[th]
+
+\caption{Top-10 detection approaches by teams participating at the PAN Shared Tasks, taken from Potthast et al. (2013)\cite{potthast:2013} and Potthast et al. (2014)\cite{potthast:2014}. Plagdet score, Precision, and Recall by obfuscation strategy and on the complete corpus. Best performing approach per team is listed. Sorted descending by Plagdet score on entire corpus.}
+\label{tab:pan13}
+
+\begin{tabularx}{.3\textwidth}{@{}l*{9}{X}}
+\toprule
+{\bfseries Team}            &  \multicolumn{3}{@{}c@{}}{\bfseries Unobfuscated} & \multicolumn{3}{@{}c@{}}{\bfseries Obfuscated} & \multicolumn{3}{@{}c@{}}{\bfseries Entire Corpus} \\
+                            \cmidrule(l@{\tabcolsep}r@{\tabcolsep}){2-4} \cmidrule(l@{\tabcolsep}r@{\tabcolsep}){5-7} \cmidrule(l@{\tabcolsep}r@{\tabcolsep}){8-10} 
+                            & {\footnotesize Prec.} & {\footnotesize Rec.} & {\footnotesize Plag.}  & {\footnotesize Prec.} & {\footnotesize Rec.} & {\footnotesize Plag.} & {\footnotesize Prec.} & {\footnotesize Rec.} & {\footnotesize Plag. $\downarrow$} \\
+
+\midrule
+Sanchez-Perez (2014)        &         0.83 &   0.98 &    0.90 &       0.93 &   0.76 &    0.80 &      0.88 &   0.88 &    0.88 \\
+Oberreuter (2014)           &         0.85 &   1.00 &    0.92 &       0.91 &   0.69 &    0.75 &      0.89 &   0.86 &    0.87 \\
+Palkovskii (2014)           &         0.96 &   0.96 &    0.96 &       0.91 &   0.66 &    0.72 &      0.92 &   0.83 &    0.87 \\
+Glinos (2014)               &         0.96 &   0.96 &    0.96 &       0.97 &   0.67 &    0.77 &      0.96 &   0.79 &    0.86 \\
+Shrestha (2014)             &         0.82 &   0.97 &    0.89 &       0.90 &   0.65 &    0.68 &      0.86 &   0.84 &    0.84 \\
+Kong (2012)                 &         0.81 &   0.95 &    0.87 &       0.90 &   0.68 &    0.74 &      0.85 &   0.82 &    0.84 \\
+Torrejon (2014)             &         0.90 &   0.97 &    0.93 &       0.92 &   0.58 &    0.68 &      0.90 &   0.77 &    0.83 \\
+%Oberreuter (2012)           &         0.89 &   1.00 &    0.94 &       0.91 &   0.54 &    0.62 &      0.89 &   0.77 &    0.83 \\
+Gross (2014)                &         0.92 &   0.91 &    0.90 &       0.95 &   0.61 &    0.69 &      0.93 &   0.77 &    0.83 \\
+%Torrejon (2013)             &         0.90 &   0.95 &    0.93 &       0.91 &   0.57 &    0.67 &      0.89 &   0.76 &    0.82 \\
+%Kong (2014)                 &         0.79 &   0.90 &    0.84 &       0.89 &   0.68 &    0.73 &      0.84 &   0.81 &    0.82 \\
+%Kong (2013)                 &         0.76 &   0.91 &    0.83 &       0.89 &   0.68 &    0.73 &      0.83 &   0.81 &    0.82 \\
+%Palkovskii (2012)           &         0.79 &   0.99 &    0.88 &       0.87 &   0.58 &    0.65 &      0.82 &   0.76 &    0.79 \\
+%Torrejon (2012)             &         0.81 &   0.96 &    0.88 &       0.85 &   0.57 &    0.66 &      0.83 &   0.75 &    0.79 \\
+Suchomel (2013)             &         0.69 &   1.00 &    0.82 &       0.75 &   0.65 &    0.70 &      0.73 &   0.77 &    0.74 \\
+%Suchomel (2012)             &         0.82 &   1.00 &    0.90 &       0.87 &   0.47 &    0.61 &      0.84 &   0.65 &    0.73 \\
+Saremi (2013)               &         0.83 &   0.95 &    0.85 &       0.91 &   0.57 &    0.53 &      0.87 &   0.77 &    0.70 \\
+%Shrestha (2013)             &         0.81 &   1.00 &    0.89 &       0.91 &   0.54 &    0.52 &      0.87 &   0.74 &    0.70 \\
+Abnar (2014)                &         0.75 &   0.99 &    0.85 &       0.84 &   0.36 &    0.46 &      0.77 &   0.61 &    0.67 \\
+Alvi (2014)                 &         0.92 &   0.99 &    0.93 &       0.93 &   0.30 &    0.41 &      0.93 &   0.55 &    0.66 \\
+Kueppers (2012)             &         0.83 &   0.84 &    0.82 &       0.89 &   0.31 &    0.43 &      0.87 &   0.51 &    0.63 \\
+%Palkovskii (2013)           &         0.80 &   0.85 &    0.82 &       0.84 &   0.33 &    0.43 &      0.82 &   0.54 &    0.62 \\
+Nourian (2013)              &         0.93 &   0.88 &    0.90 &       0.97 &   0.21 &    0.31 &      0.95 &   0.43 &    0.58 \\
+\textit{Ours}               &         0.90 &   0.89 &    0.88 &       0.92 &   0.13 &    0.22 &      0.93 &   0.46 &    0.51 \\
+Sanchez-Vega (2012)         &         0.40 &   0.74 &    0.52 &       0.45 &   0.42 &    0.41 &      0.40 &   0.56 &    0.46 \\
+PAN Baseline (2014)         &         0.89 &   1.00 &    0.93 &       0.96 &   0.05 &    0.07 &      0.93 &   0.34 &    0.42 \\
+Gillam (2012)               &         0.88 &   0.87 &    0.88 &       0.97 &   0.01 &    0.03 &      0.89 &   0.27 &    0.41 \\
+%Gillam (2013)               &         0.88 &   0.84 &    0.86 &       0.97 &   0.01 &    0.02 &      0.88 &   0.26 &    0.40 \\
+%Gillam (2014)               &         0.88 &   0.53 &    0.66 &       0.48 &   0.01 &    0.03 &      0.89 &   0.17 &    0.28 \\
+Jayapal (2013)              &         0.92 &   0.86 &    0.39 &       0.85 &   0.16 &    0.15 &      0.88 &   0.38 &    0.27 \\
+%Jayapal (2012)              &         0.99 &   0.52 &    0.35 &       0.91 &   0.09 &    0.10 &      0.95 &   0.22 &    0.20 \\
+
+\bottomrule
+\end{tabularx}
+
+
+\end{table}

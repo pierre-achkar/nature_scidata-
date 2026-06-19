@@ -1,0 +1,31 @@
+% \section{Experiments and Intended Use}
+% This section describes applications of Webis-SR4ALL-26 and reports retrieval signals obtained from executing a subset of normalized search strategies against OpenAlex as a demonstration use case.
+
+\section{Intended Use and Retrieval Experiments}
+We first summarize intended uses of Webis-SR4ALL-26. We then present a retrieval demonstration by executing a subset of normalized search strategies in OpenAlex and analyzing the resulting retrieval signals.
+
+\subsection{Intended Use}
+Webis-SR4ALL-26 enables large-scale evaluation and analysis of systematic review retrieval and screening across scientific domains. Key applications include: 
+(i) benchmarking retrieval and screening methods against the review’s reference list; 
+(ii) analyzing cross-domain differences in retrieval and screening performance; 
+(iii) training and evaluating extraction methods for systematic review artifacts;
+and (iv) studying systematic review practices across fields and over time.
+% Webis-SR4ALL-26 enables large-scale experiments on systematic review retrieval and screening across scientific domains. Key applications include: (i) evaluating search strategies by generating Boolean queries and comparing retrieved studies against cited references; (ii) benchmarking screening methods against review references; (iii) analyzing cross-domain differences in search and screening performance; and (iv) examining how search strategies and inclusion criteria vary across fields.
+
+\subsection{Query Normalization and Demonstration Execution}
+\label{sec:query-norm-demo}
+To enable controlled experimentation, reported search strategies are transformed into a uniform representation that can be executed within a single retrieval environment. As these strategies are expressed in heterogeneous, database-specific query languages, direct large-scale execution is not feasible. We therefore convert them into simplified Boolean expressions that can be issued to OpenAlex via its API. The resulting normalized queries are included in Webis-SR4ALL-26 and released as part of the dataset to facilitate reproducible retrieval experiments.
+
+The normalization process retains only topical terms and the fundamental logical operators \texttt{AND}, \texttt{OR}, and \texttt{NOT}. Database-specific syntax has been removed, including explicit field tags (e.g. \texttt{TITLE-ABS-KEY} in Scopus or \texttt{[mesh]} in Pubmed) and metadata constraints, such as language or publication type filters. Temporal restrictions are not embedded in the Boolean string; rather, extracted year-range metadata is applied externally at query time
+
+Normalization is performed using an instruction-tuned large language model (Qwen3-32B) applied to reported Boolean queries or keyword lists. The model is prompted using a few-shot approach to preserve the topical vocabulary and high-level logical structure of each strategy without introducing novel concepts or search terms not present in the original formulation. Lightweight rule-based post-processing then ensures syntactic validity of the resulting Boolean expressions.
+
+Some strategies cannot be normalized without additional assumptions. For instance, when numeric placeholders reference external term lists not provided in the review, or when the reported strategy contains insufficient information to construct a meaningful query, the normalized query is set to \texttt{null}. Similarly, when post-processing cannot produce a valid, non-empty Boolean expression, the query is also set to \texttt{null}. 
+
+All queries that could be executed against the OpenAlex \texttt{/works} endpoint were first partitioned into three buckets based on their initial result counts returned via the \texttt{search=}. The buckets were defined using fixed hit-count thresholds: (i) 1,000–250,000 results, (ii) 250,000–1,000,000 results, and (iii) more than 1,000,000 results. The analysis was restricted to the smallest bucket.
+
+The executed subset comprises two query variants derived from the review data: (i) normalized Boolean strategies reconstructed from the reported search strings, and (ii) keyword-based queries constructed from reported keyword lists in cases where full Boolean queries were unavailable.
+
+For each executed query, retrieved OpenAlex work identifiers were aligned with the corresponding review’s reference set. This alignment provides per-review retrieval signals, including precision-, recall-, and F-score–based metrics quantifying the extent to which the strategy recovers its cited studies. Aggregate results over this subset are reported in Table~\ref{tab:retrieval-aggregate}.
+
+\input{table-agg-res}

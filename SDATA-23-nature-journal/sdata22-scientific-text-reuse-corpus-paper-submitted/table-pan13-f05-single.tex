@@ -1,0 +1,49 @@
+\begin{table}[th]
+
+%\scriptsize
+\setlength{\tabcolsep}{4pt}% Org. 6pt
+\caption{Precision, Recall, and $F_{0.5}$ score of competing alignment approaches by teams participating at the PAN Shared Tasks, taken from Potthast et al. (2013)\cite{potthast:2013} and Potthast et al. (2014)\cite{potthast:2014} and sorted descending by precision. The listed approaches are described in detail in the PAN Workshop proceedings \cite{pan:2012,pan:2013,pan:2014}. Complexity denotes the runtime complexity of the approach; Data Specificity denotes the degree of PAN-specific optimizations reducing transferability to other data domains, i.e. ensemble methods, trained approaches, feature extraction, or special handling of corpus characteristics.}
+\label{tab:pan13}
+
+\centering
+\begin{tabular}{@{}l*{3}{c}cc@{}}
+\multicolumn{6}{c}{\bfseries PAN13 Evaluation Corpus} \\
+\toprule
+Team                    & Precision$\downarrow$ & Recall        & $F_{0.5}$         & Complexity    & Data Specificity  \\
+\midrule
+        Glinos (2014)   &       0.96            &    0.79       &  0.92             & $O(nm)$       & Medium            \\
+       Jayapal (2012)   &       0.95            &    0.22       &  0.57             & $O(n+m)$      & Low               \\
+       Nourian (2013)   &       0.95            &    0.43       &  0.76             & ---           & ---               \\
+         Gross (2014)   &       0.93            &    0.77       &  0.89             & $O(nm)$       & Low               \\
+         Alvi (2014)    &       0.93            &    0.55       &  0.82             & $O(n+m)$      & Medium            \\
+        \textbf{Ours}   &\textbf{0.93}          &\textbf{0.46}  &  \textbf{0.77}    & $O(n+m)$      & Low               \\
+      Baseline (2014)   &       0.93            &    0.34       &  0.69             & $O(n+m)$      & Low               \\
+    Palkovskii (2014)   &       0.92            &    0.83       &  0.90             & $O(nm)$       & High              \\
+      Torrejon (2014)   &       0.90            &    0.77       &  0.87             & $O(nm)$       & High              \\
+        Gillam (2014)   &       0.89            &    0.17       &  0.48             & $O(nm)$       & High              \\ %
+    Oberreuter (2014)   &       0.89            &    0.86       &  0.88             & ---           & ---               \\
+    Oberreuter (2012)   &       0.89            &    0.77       &  0.86             & ---           & ---               \\ %
+        Gillam (2012)   &       0.89            &    0.27       &  0.61             & $O(nm)$       & High              \\ %
+      Torrejon (2013)   &       0.89            &    0.76       &  0.86             & $O(nm)$       & High              \\ %
+        Gillam (2013)   &       0.88            &    0.26       &  0.60             & $O(nm)$       & High              \\ %
+       Jayapal (2013)   &       0.88            &    0.38       &  0.70             & $O(n+m)$      & Low               \\
+ Sanchez-Perez (2014)   &       0.88            &    0.88       &  0.88             & $O(nm)$       & High              \\
+      Kueppers (2012)   &       0.87            &    0.51       &  0.76             & $O(nm)$       & Low               \\
+      Shrestha (2013)   &       0.87            &    0.74       &  0.84             & $O(nm)$       & Medium            \\
+        Saremi (2013)   &       0.87            &    0.77       &  0.85             & ---           & ---               \\
+      Shrestha (2014)   &       0.86            &    0.84       &  0.86             & $O(nm)$       & Medium            \\
+          Kong (2012)   &       0.85            &    0.82       &  0.84             & $O(nm)$       & Low               \\
+      Suchomel (2012)   &       0.84            &    0.65       &  0.79             & $O(n+m)$      & Medium            \\
+          Kong (2014)   &       0.84            &    0.81       &  0.83             & $O(nm)$       & Low               \\
+          Kong (2013)   &       0.83            &    0.81       &  0.83             & $O(nm)$       & Low               \\
+      Torrejon (2012)   &       0.83            &    0.75       &  0.81             & $O(nm)$       & High              \\ %
+    Palkovskii (2013)   &       0.82            &    0.54       &  0.74             & $O(nm)$       & High              \\
+    Palkovskii (2012)   &       0.82            &    0.76       &  0.81             & $O(nm)$       & High              \\
+         Abnar (2014)   &       0.77            &    0.61       &  0.73             & $O(nm)$       & Medium            \\
+      Suchomel (2013)   &       0.73            &    0.77       &  0.74             & $O(n+m)$      & Medium            \\
+  Sanchez-Vega (2012)   &       0.40            &    0.56       &  0.42             & $O(nm)$       & Medium            \\
+\bottomrule
+\end{tabular}
+
+\end{table}
+

@@ -1,0 +1,60 @@
+\begin{table}[ht]
+\centering
+\small
+
+\caption{Data record overview for case data. \textit{Key} denotes the top-level JSON key by which fields are identified, \textit{Description} provides an explanation of the contained data, and \textit{Type} denotes the data type; ``optional'' indicates fields that can be empty. The text fields are included only in the full version of the corpus.}
+\label{tab:data-record-cases}
+
+\begin{tabularx}{\textwidth}{@{}cclXl@{}}
+\toprule
+& & \textbf{\textsf{Key}} & \textbf{\textsf{Description}} & \textbf{\textsf{Type}} \\
+
+\midrule
+& & \texttt{id} & Unique identifier for this case, in UUID format. & String \\
+
+\midrule
+\parbox[t]{0.7em}{\multirow{8}{*}{$\left.\rotatebox[origin=c]{90}{\hbox to 24ex{\textit{\textsf{\small\hfill Publication A\hfill}}}}\right\{$}}
+%& \parbox[t]{0.7em}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\textit{\textsf{\small Text}}}}}
+%& \texttt{text\_a} & Matched text in publication A.& String (full only)\\
+%& & \texttt{before\_a} & Text context before the matched text, 100 characters long.& String (full only)\\
+%& & \texttt{after\_a} & Text context after the matched text, 100 characters long.& String (full only)\\
+
+%\cmidrule(l){2-5}
+& \parbox[t]{0.7em}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\textit{\textsf{\small Locator}}}}}
+& \texttt{begin\_a} & Start location of matched text, measured as character offset.& Integer\\
+& & \texttt{end\_a} & End location of matched text, measured as character offset.& Integer\\
+& & \texttt{doc\_length\_a} & Total length of publication A in characters. & Integer\\
+
+\cmidrule(l){2-5}
+& \parbox[t]{0.7em}{\multirow{5}{*}{\rotatebox[origin=c]{90}{\textit{\textsf{\small Context}}}}}
+& \texttt{doi\_a} & DOI identifier for publication A.& String\\
+& & \texttt{year\_a} & Publication year for publication A.& Integer (optional)\\
+& & \texttt{field\_a} & Field(s) of study for publication A.& String Array (optional)\\
+& & \texttt{area\_a} & Scientific area(s) for publication A. & String Array (optional)\\
+& & \texttt{discipline\_a} & Scientific discipline(s) for publication A.& String Array (optional)\\[1.0ex]
+
+\midrule
+\parbox[t]{0.7em}{\multirow{8}{*}{$\left.\rotatebox[origin=c]{90}{\hbox to 24ex{\textit{\textsf{\small\hfill Publication B\hfill}}}}\right\{$}}
+%& \parbox[t]{0.7em}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\textit{\textsf{\small Text}}}}}
+%& \texttt{text\_b} & Matched text in publication B.& String (full only)\\
+%& & \texttt{before\_b} & Text context before the matched text, 100 characters long.& String (full only)\\
+%& & \texttt{after\_b} & Text context after the matched text, 100 characters long.& String (full only)\\
+
+%\cmidrule(l){2-5}
+& \parbox[t]{0.7em}{\multirow{3}{*}{\rotatebox[origin=c]{90}{\textit{\textsf{\small Locator}}}}}
+& \texttt{begin\_b} & Start location of matched text, measured as character offset.& Integer\\
+& & \texttt{end\_b} & End location of matched text, measured as character offset.& Integer\\
+& & \texttt{doc\_length\_b} & Total length of publication B in characters. & Integer\\
+
+\cmidrule(l){2-5}
+& \parbox[t]{0.7em}{\multirow{5}{*}{\rotatebox[origin=c]{90}{\textit{\textsf{\small Context}}}}}
+& \texttt{doi\_b} & DOI identifier for publication B.& String\\
+& & \texttt{year\_b} & Publication year for publication B.& Integer (optional)\\
+& & \texttt{field\_b} & Field(s) of study for publication B.& String Array (optional)\\
+& & \texttt{area\_b} & Scientific area(s) for publication B. & String Array (optional)\\
+& & \texttt{discipline\_b} & Scientific discipline(s) for publication B.& String Array (optional)\\[1.0ex]
+
+\bottomrule
+\end{tabularx}
+
+\end{table}

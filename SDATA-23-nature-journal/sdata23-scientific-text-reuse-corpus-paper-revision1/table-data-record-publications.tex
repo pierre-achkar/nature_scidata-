@@ -1,0 +1,28 @@
+\begin{table}[ht]
+\centering
+\small
+
+\caption{Data record overview for publication data. \textit{Key} denotes the top-level JSON key fields are identified by, \textit{Description} provides an explanation of the contained data, and \textit{Type} denotes the data type; ``optional'' indicates fields that can be empty.}
+\label{tab:data-record-publications}
+
+\begin{tabularx}{\textwidth}{@{}clXl@{}}
+\toprule
+& \textbf{\textsf{Key}} & \textbf{\textsf{Description}} & \textbf{\textsf{Type}} \\
+
+\midrule
+% \parbox[t]{0.7em}{\multirow{2}{*}{\rotatebox[origin=c]{90}{\textit{\textsf{\small Text}}}}}
+% & \texttt{text} & Fulltext of the publication, extracted from its original PDF form. Obtained and processed as described in Section \textit{Data Sources and Preprocessing}. & String \\
+
+%\cmidrule(lr){1-4}
+\parbox[t]{0.7em}{\multirow{6}{*}{\rotatebox[origin=c]{90}{\textit{\textsf{\small Metadata}}}}}
+& \texttt{doi}         & DOI identifier of the publication.             & String\\
+& \texttt{doc\_length} & Total length of the publication in characters. & Integer\\
+& \texttt{year}        & Publication year of the publication.           & String Array (optional)\\
+& \texttt{field}       & Field of study of the publication.             & String Array (optional)\\
+& \texttt{area}        & Scientific area of the publication.            & String Array (optional)\\
+& \texttt{discipline}  & Scientific discipline of the publication.      & String Array (optional)\\
+
+\bottomrule
+\end{tabularx}
+
+\end{table}

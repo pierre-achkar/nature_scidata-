@@ -1,0 +1,160 @@
+Dear Pierre Achkar
+
+We regret to inform you that your submission
+
+242 A Large-Scale, Cross-Disciplinary Corpus of Systematic Reviews
+
+to the SIGIR 2026 Resource Track has not been accepted.
+
+Thank you for considering SIGIR for your work. This year, we received 143 papers and accepted 61 (43%) of them.  For all papers, we assigned at least three PC members, who spent considerable time on reading and discussing your submission and provided detailed suggestions for improvement in the attached reviews. We hope that their feedback will allow you to identify areas where you can improve your paper.
+
+Note that both ICTIR (Melbourne, July 25, see https://sigir-ictir.github.io/ictir2026/, submission deadline 16 April) and SIGIR-AP (Singapore, anticipated as being held in mid-December) allow “Revise and Resubmit” (R&R) submission of SIGIR full and short research papers. Under this track you are expected to have revised your paper in line with the SIGIR referee comments, and provided a brief discussion appendix as part of the re-submission that summarizes the changes that have been made and any other responses you might have to the SIGIR referees. Where possible, your paper will then be re-reviewed by one or more of the SIGIR referees that read it originally.
+
+Papers from other SIGIR Tracks can also be resubmitted to ICTIR or SIGIR-AP if they fall within their respective scopes, but as “new” submissions that will be fully re-reviewed.
+
+Finally, we hope that you will still consider joining us at ACM SIGIR 2026. Registrations are now open, see https://sigir2026.org/en-AU/pages/attending/registration, and we’d love to see you here in Melbourne as part of the conference week. Early bird registration will remain available until 23 May Melbourne time.
+
+Best regards,
+Lorraine Goeuriot and Joel Mackenzie, SIGIR Resource Track chairs
+
+
+--------------------------
+
+SUBMISSION: 242
+TITLE: A Large-Scale, Cross-Disciplinary Corpus of Systematic Reviews
+
+-------------------------  METAREVIEW  ------------------------
+There is no metareview for this paper.
+
+----------------------- REVIEW 1 ---------------------
+
+SUBMISSION: 242
+TITLE: A Large-Scale, Cross-Disciplinary Corpus of Systematic Reviews
+
+----------- Novelty -----------
+SCORE: 4 (good)
+----- TEXT:
+Compared to related dataset focusing on single domain, this paper proposes a cross-disciplinary dataset of systematic reviews.
+----------- Availability -----------
+SCORE: 4 (good)
+----- TEXT:
+The resource is available at review time.
+----------- Utility -----------
+SCORE: 4 (good)
+----- TEXT:
+The resource has documents to clarify the dataset information.
+----------- Potential Impact -----------
+SCORE: 3 (fair)
+----- TEXT:
+Its practical impact is moderated by the fact that only 38,292 reviews (12.7%) form an “effectively usable” subset, while only 24.1% of reviews have full text available. Moreover, although the corpus spans 27 fields, it remains strongly dominated by medicine (~64%), which limits the strength of the cross-disciplinary claim for IR evaluation.
+----------- Overall Recommendation -----------
+SCORE: -1 (Lean to Reject)
+----------- Detailed Comments to Authors -----------
+(1) The paper would benefit from a clearer and more quantitative justification of the “large-scale” claim. While the corpus contains 301,871 reviews in the metadata layer, the practically usable portion appears smaller: the paper reports an “effectively usable subset” of 38,292 reviews (12.7%) in Table 3. It is unclear whether the claimed scale should be interpreted at the metadata level or at the level of records that actually support structured IR experiments. I encourage the authors to compare their resource more explicitly against prior datasets in Table 1, ideally in terms of order-of-magnitude differences and in terms of the usable subset rather than only the total corpus size.
+(2) The experiment yields extremely low retrieval precision (approximately 0.015), with no comparisons made against existing retrieval models. No ablation experiments are conducted to verify the effectiveness of the extraction pipeline and the normalization method. The precision and recall of the extraction pipeline are not reported, and cross-domain differences are not analyzed.
+(3) Section 4.1 lists several possible applications, but these are not sufficiently grounded in prior literature, nor are they validated through concrete benchmark designs or case studies in the paper. As a result, it remains unclear which of these use cases are already established in the literature, which are newly enabled by this resource, and which are currently only prospective directions.
+(4) Table 1 suggests richer metadata than prior resources, but the paper does not clearly demonstrate why fields such as objectives, eligibility criteria, or database information yield actionable benefits for IR beyond the citation/reference layer already available.
+----------- Scrutiny -----------
+SCORE: 3 (carefully, but haven't checked all details)
+----------- Reviewer Expertise -----------
+SCORE: 4 (Knowledgeable: I have read the literature in this area and have a solid understanding of the topic.)
+
+
+----------------------- REVIEW 2 ---------------------
+
+SUBMISSION: 242
+TITLE: A Large-Scale, Cross-Disciplinary Corpus of Systematic Reviews
+
+----------- Novelty -----------
+SCORE: 4 (good)
+----- TEXT:
+The proposed dataset is larger than the existing ones, covers more disciplines, and contains automatically extracted meta data.
+----------- Availability -----------
+SCORE: 4 (good)
+----- TEXT:
+The dataset is made available. The code for the experiment is also available. The preliminary experiment is easy to reproduce.
+----------- Utility -----------
+SCORE: 3 (fair)
+----- TEXT:
+The paper describes the pipeline to create the dataset. One has a good idea of what has been done and how the data is collected and filtered.
+What remains unclear is the possible uses of the dataset. The paper describes a simple preliminary experiment to showcase a potential utilization of the resource. However, this is very limited. The paper suggests that several other utilizations can be done with the dataset. This remains unclear without a concrete example.
+To be useful, a dataset is created for some specific utilization purpose. A dataset collected for general purpose (or potential utilizations) is not very useful. This is a strong weakness of the dataset - a dataset without specific use purpose and test data.
+----------- Potential Impact -----------
+SCORE: 3 (fair)
+----- TEXT:
+The potential impact depends on how other researchers will imagine utilizations of the dataset. This remains unclear for now.
+----------- Overall Recommendation -----------
+SCORE: -1 (Lean to Reject)
+----------- Detailed Comments to Authors -----------
+The proposed resource is intended to cover systematic reviews in multiple disciplines. The potential benefit is that one can compare across different disciplines. Another potential advantage is to perform refined analysis relating to the meta data extracted.
+The authors have process the data carefully. Despite this, only a small percentage of the whole dataset contains all the interesting fields. The effectively useable subset is about 38K, much lower than the initial set of >300K.
+As is noted, different systematic review strategies may be used in different disciplines. Would it be possible to normalize this across disciplines? In most systematic reviews, the choice of source of articles is also important. The created dataset are from OpenAlex, which may not cover all the document sources in the original review papers, and may include additional sources. This makes it difficult to reproduce or compare with the results of the original papers.
+The strong weakness of the paper is the lack of a utilization scenario and test data. The dataset has potentials, but other researchers have to perform additional work to adapt the dataset for specific purposes. The contribution of the dataset is not clear for now. It would be better that the authors identify an interesting application scenario and build test data for it.
+
+The paper reports precision and recall in the experiment. It is unclear if recall is evaluated against the full set of "relevant" documents of the original papers, or against those in OpenAlex. The recall and precision levels seem very low. This may be due to the partial coverage of OpenAlex, or to the incorrect reproduction of keyword or Boolean queries. This may be discussed.
+----------- Scrutiny -----------
+SCORE: 4 (understood all details and double-checked the available resources)
+----------- Reviewer Expertise -----------
+SCORE: 4 (Knowledgeable: I have read the literature in this area and have a solid understanding of the topic.)
+
+
+----------------------- REVIEW 3 ---------------------
+
+SUBMISSION: 242
+TITLE: A Large-Scale, Cross-Disciplinary Corpus of Systematic Reviews
+
+----------- Novelty -----------
+SCORE: 4 (good)
+----- TEXT:
+The authors do a good job of comparing the proposed resource with existing collections in Table 1. Webis-SR4ALL-26 is much bigger than existing collections. However, from the details provided at the end of Section 3.1, it appears that the collection is not as heterogeneous as initial claims suggest, and retains a heavy bias in favour of the broad BioMed domain. Also, one important axis of comparison that is missing from Table 1 is how the ground-truth for the various collections was constructed.
+----------- Availability -----------
+SCORE: 5 (excellent)
+----- TEXT:
+I think the links provided at the end of the abstract (corpus and code) are interchanged.
+----------- Utility -----------
+SCORE: 4 (good)
+----- TEXT:
+I did not replicate the corpus construction process, and the subsequent retrieval experiments, but the instructions for doing so seemed reasonably clear.
+----------- Potential Impact -----------
+SCORE: 2 (poor)
+----- TEXT:
+Webis-SR4ALL-26 has some important drawbacks in its present form. From the discussion in Section 5, it seems that the authors are aware of these limitations. While it represents a solid starting point, my gut-feeling is that it is not yet mature enough to be directly adopted as a benchmark collection by the community. In sum, I think the target community would be better served by a refined version of the current collection.
+----------- Overall Recommendation -----------
+SCORE: -1 (Lean to Reject)
+----------- Detailed Comments to Authors -----------
+I have 3 major concerns about the collection.
+
+    1. Its composition. You claim "broad cross-domain coverage", but to my mind, Health Professions, Biochemistry, Genetics and Molecular Biology, Neuroscience, Dentistry, etc. are all connected to the broad BioMed domain to varying degrees. Thus, Webis-SR4ALL-26 also seems to be dominated by the same genre. Only Environmental Science, Engineering, and Computer Science seem to have limited / no overlap, but they constitute only a small part of the collection.
+
+    The dataset from Hannousse and Yahiouche is mentioned very briefly, so I do not know what their source ("S2") was, but why did you not include ACM Computing Surveys as a source for your collection (more about this below)? If there are persuasive technical problems / reasons behind this exclusion, I think SIGIR would be a good venue to highlight them.
+
+    2. The ground-truth. "The resolved reference sets used for evaluation do not correspond directly to included-study gold standards, as reviews cite background and contextual literature in addition to eligible studies." This limitation is only discussed in Section 5 (lines 653-656), but occurred to me very early in the paper. It is thus likely to bother other lay readers also. How do the earlier datasets address this problem?
+
+    Given this limitation, the figures in Table 4 are hard to interpret. Further, the authors do not provide even anecdotal failure analysis for why the recall and precision are so low.
+
+    3. Given the scale of the proposed collection, the authors chose automated / LLM-based methods to extract some of the metadata. Is it intended that some of this may later be treated as surrogates for ground-truth annotations? If yes, this may be a matter of concern.  Only a tiny sample (60 reviews) was manually examined, and only a qualitative analysis is presented. Assuming that humans created the ground-truth for the smaller collections, would it be possible to use these smaller collections to calibrate how effective the LLM-based methods are?
+
+
+    Other remarks (some minor, some not so minor):
+
+    At the very outset, as someone not working in this area, I have a very basic question: how is a survey paper different from a systematic review? For the benefit of a wider audience, please explain this difference clearly. If the difference is not a major one, then including Computer Science among the "other scientific fields where systematic reviews are increasingly adopted" (around line 87) is very misleading / confusing. My impression is that ACM Computing Surveys has been regarded as a very good resource for MANY years (issues in volume 58 are now being published). Of course, I agree that the number of surveys being published has increased in recent times, but that is probably true of the volume of papers being published in most venues.
+
+    On a related note, please explain why "survey" is not included as a search term along with "systematic review" and "systematic literature review".
+
+    Table 1: I think it would help some readers (like me) if you could please explain the difference between the (CR, CI) and (PR, PI) pairs more clearly. Also, what does S2 (Hannousse, Pool) mean?
+
+    Lines 310-317: Please include what is known (quantitative details) about the correctness and completeness of the reference lists (and the corresponding cross-references) provided by OpenAlex. Have these figures been independently confirmed by other studies? As someone not actively working in this area, I do not know whether there is any overlap between the creators of OpenAlex and the authors of [7], which seems to be a potential source of useful information in this regard.
+
+    Some additional quantitative details about the accuracy-efficiency tradeoff achieved by PaddleOCR-VL wrt its competition would be nice.
+
+    Lines 361-362: It was not clear to me exactly how reviews with search strategies can be used for direct query-based retrieval experiments. This is possibly because I do not work in this area, but you might want to keep a broader audience in mind.
+
+    For the verify-then-repair pipeline, a table analogous to Table 2 (which provides article counts at various stages of the construction pipeline) would be nice.
+
+    Lines 494-498: Sorry if this is a very basic question, but what are "registration documents"? Also, if updates were consciously excluded, why were errata, supplementary materials, etc. not eliminated during the construction stage?
+
+    Minor typos: desigend, syntehsizing
+----------- Scrutiny -----------
+SCORE: 3 (carefully, but haven't checked all details)
+----------- Reviewer Expertise -----------
+SCORE: 3 (Familiar: I am somewhat familiar with this topic but do not have in-depth expertise.)

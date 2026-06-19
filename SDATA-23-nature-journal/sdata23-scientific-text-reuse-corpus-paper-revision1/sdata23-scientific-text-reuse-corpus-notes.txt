@@ -1,0 +1,5 @@
+[ Similar Dataset Articles in Scientific Data ]
+
+- https://www.nature.com/articles/s41597-020-00749-y (A detailed open access model of the PubMed literature)
+- https://www.nature.com/articles/s41597-021-00875-1 (NLM-Chem, a new resource for chemical entity recognition in PubMed full text literature)
+- https://www.nature.com/articles/s41597-020-00667-z (Question-driven summarization of answers to consumer health questions)

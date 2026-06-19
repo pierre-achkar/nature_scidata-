@@ -1,0 +1,108 @@
+Manuscript Number: SDATA-22-01044A
+Manuscript Title: STEREO: Scientific Text Reuse in Open Access Publications
+Corresponding Author: Mr Gienapp
+
+Dear Mr Gienapp,
+
+Thank you for your patience while your manuscript "STEREO: Scientific Text Reuse in Open Access Publications, was under consideration at Scientific Data. Your paper has now been seen by our referees, and in the light of their advice, the handling member of our Editorial Board is now satisfied with the scientific content of this work and supportive of publication. We are therefore delighted to say that we can accept this work, in principle, for publication.
+
+We must first ask that you revise your paper following the guidelines below to ensure that it conforms to our house-style and format, and that you are able to address our final editorial content requests.
+
+We ask that you please read through these guidelines carefully to avoid potential delays.
+
+Our full formatting guidelines are available here: https://www.nature.com/sdata/publish/submission-guidelines
+
+GENERAL
+
+* Final manuscript files should be provided as either a Word or LaTeX document. We are unable to accept PDFs at this stage.
+
+* Please ensure that manuscript titles do not contain any punctuation, and only the first word and any proper nouns are capitalised
+
+* Please avoid the use of acronyms in titles and ensure taxonomic names are italicised.
+
+* Please remove any footnotes to avoid confusion with cited references, placing the information within the main text or formal citation if appropriate
+
+* All references should be numbered sequentially throughout the text and should conform to the Nature style. Examples of proper formatting can be found here: https://www.nature.com/sdata/publish/submission-guidelines#refs
+
+* The Abstract should be a single paragraph (about 150-200 words) with no references and should serve as a brief, non-technical summary of the topic of your paper.
+
+* Section subheadings should not be numbered, (e.g 1. Background, 2. Methods). If numbers are present then they should be removed.
+
+* In most cases, URLs should only be included in the References section if they refer to static documents hosted stably on the web. Websites or dynamic web resources should be cited by embedding the URL in the main article text, and should not be included in the formal References.
+
+* Unfortunately our policies do not allow the inclusion of unpublished works within the References section. Therefore, if any References are not yet formally accepted and considered "in press", please remove them from the text.
+
+* If you have not done so already, please mention which repository the dataset can be found in the 'Data Records' section, with a corresponding data citation into your main 'References' section, as per our submission guidelines (https://www.nature.com/sdata/publish/submission-guidelines#data_citations).
+
+FIGURES AND OTHER DISPLAY ITEMS
+
+* Final figures should be provided in production-quality (300 dpi or above) as either PDF, EPS, TIFF or JPG formats Please see our guidelines online:
+https://www.nature.com/sdata/publish/submission-guidelines#figures>
+
+Choosing the right electronic format for your figures at this stage will speed up the processing of your paper. Line-art figures should ideally be provided in a suitable vector-graphic format by saving them directly in the EPS or PDF formats from the program used to create them.
+
+* All Figures should have titles, numbers, and legends in the manuscript text, not embedded in the image.
+
+* Figures should not include Figure number labels in the image, and lowercase letters should be used to label panels
+
+* For Tables embedded in the manuscript text, titles and numbers must also be present in the manuscript text. If provided as separate files, Table titles and numbers should be within the editable table file itself.
+
+* All Figures and Tables are cited in ascending numerical order in the manuscript text.
+
+* All figures and tables must be provided as separate files, with all Figure panels together in a single file
+
+* Tables should be provided in Excel format, with one Table per file. Workbooks or tables on multiple sheets are not permitted at this stage. Small, editable tables may be embedded directly into the manuscript file.
+
+* Tables that do not fit onto a single A4 page cannot be included in the PDF or HTML version of the article and will be made available as supplementary information files. Please re-label these files as "Supplementary Table XYZ,” and update any citations or descriptions in the manuscript to match. These tables must be supplied as separate, editable files.
+
+SUPPLEMENTARY MATERIAL
+
+* Supplementary Information is material that is essential background to the study but which is not practical to include in the printed version of the paper (for example, video files, large data sets and calculations). Each item must be referred to in the main manuscript.
+
+* Where possible, Supplementary Information should be provided as a single combined PDF with a table of contents on the first page.
+
+* Supplementary Figures should be presented with their titles and legends directly below each figure rather than being included in the main manuscript file.
+
+* All Supplementary files must be cited at least once in the article text.
+
+POLICIES AND ETHICS
+
+* As part of our code sharing policies, we ask authors to include a subsection in the Methods describing any custom code used in the work. More details regarding our Code Availability policies can be found here: https://www.nature.com/sdata/policies/editorial-and-publishing-policies/#code-avail
+
+* If any figures feature any recognizable human study participants, a statement confirming that informed consent to publish their likeness was obtained must be added to the corresponding Figure Legend, or in the manuscript. More information on our digital ethics policies can be found here: https://www.nature.com/sdata/policies/editorial-and-publishing-policies/#digital-image
+
+* We require all authors to declare any competing financial or non-financial interests that relate to their work. Please provide a competing interests' statement on behalf of all authors, even if just to state a lack of conflict. This statement should be placed after the Methods section, alongside the Acknowledgements. More information on this policy can be found here: https://www.nature.com/sdata/policies/editorial-and-publishing-policies/#competing
+
+* The final accession numbers or DOIs for any deposited datasets must be incorporated into the relevant data citations in the reference list. We cannot publish papers with incomplete data metadata. If the final DOI or accession number for your dataset cannot be included in the data citation please make sure you alert the Editor as soon as possible so the manuscript is not delayed.
+
+ORCID
+
+Scientific Data is committed to improving transparency in authorship. As part of our efforts in this direction, we encourage our authors to link their Open Researcher and Contributor Identifier (ORCID) with their account on the Manuscript Tracking System (MTS) prior to acceptance. ORCID helps the scientific community achieve unambiguous attribution of all scholarly contributions. For more information please visit http://www.springernature.com/orcid
+
+Please follow the instructions in the link below to link your ORCID to your account on our MTS before submitting the final version of the manuscript. If you do not yet have an ORCID you will be able to create one in minutes. Please note we can only link authors to their ORCIDs if this information is included on our MTS prior to a final Accept decision - adding this information to the manuscript file alone will not result in ORCIDs being associated with your publication.
+https://www.springernature.com/gp/researchers/orcid/orcid-for-nature-research
+
+AUTHOR AFFILIATIONS
+
+Please note that author affiliations must be listed in numerical order within the author list, starting with the first author, and will be re-ordered if this is found to be incorrect prior to publication. Please see our guidelines for further guidelines: https://www.nature.com/sdata/publish/submission-guidelines#authors_affils>
+
+We thank you again for your interest in Scientific Data. Please do not hesitate to contact us directly if you have any questions as you prepare your final revision.
+
+We hope to receive your revised paper within one month. Please let us know if you will need more time preparing your paper.
+
+We look forward to receiving your revised manuscript.
+
+Sincerely,
+
+Dr Guy Jones
+Chief Editor
+Scientific Data
+
+
+---------------
+
+Comments from the Reviewers:
+
+Reviewer #2 (Remarks to the Authors):
+
+Thank you for addressing the remaining issues.

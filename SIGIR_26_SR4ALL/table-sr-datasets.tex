@@ -1,0 +1,42 @@
+\newcommand{\bsq}{$\blacksquare$}
+\newcommand{\wsq}{$\square$}
+
+
+\begin{table*}[t]
+\small
+\sffamily
+\renewcommand{\arraystretch}{1.05}
+\renewcommand{\tabcolsep}{3.6pt}
+\centering
+\caption{Overview of systematic review datasets.}
+\label{table-sr-datasets}
+\vskip-2ex
+\begin{tabular}{@{}l@{}rcc@{\hspace{2em}}lcccc@{\hspace{2em}}rcccccc@{\hspace{2em}}ccccc@{}}
+\toprule
+  \multicolumn{4}{@{}c@{\hspace{2em}}}{\bfseries Dataset}                                                                                                   & \multicolumn{5}{@{}c@{\hspace{2em}}}{\bfseries Publication Data} & \multicolumn{12}{@{}c@{}}{\bfseries Structured Data Fields}    \\
+\cmidrule(r@{2em}){1-4}\cmidrule(r@{2em}){5-9}\cmidrule{10-21}
+  Name             & \multicolumn{1}{@{}c@{}}{Rf.} & Year               & Link                                         & Domain & \multicolumn{3}{@{}c@{}}{\kern-0.5em SysRevs} & Pool & Topics & \multicolumn{6}{@{}c@{\hspace{2em}}}{Topic Description} & \multicolumn{5}{@{}c@{}}{Screening} \\
+\cmidrule(r@{\tabcolsep}){1-1}\cmidrule(r@{\tabcolsep}){2-2}\cmidrule(l@{\tabcolsep}r@{\tabcolsep}){3-3}\cmidrule(l@{\tabcolsep}r@{2em}){4-4}\cmidrule(r@{\tabcolsep}){5-5}\cmidrule(l@{\tabcolsep}r@{\tabcolsep}){6-8}\cmidrule(l@{\tabcolsep}r@{2em}){9-9}\cmidrule(r@{\tabcolsep}){10-10}\cmidrule(l@{\tabcolsep}r@{2em}){11-16}\cmidrule{17-21}
+                   &                        &                           &                                                                                       &         & Rfs. &  TA  &  FT  &          &        & Obj. & RQs  & KWs  & BQs  & Crt. & Rng. & DBs  &  CR  &  CI  &  PR  &  PI  \\
+\midrule
+  Cohen et al.     & \cite{cohen:2006}      & \citeyear{cohen:2006}     & \href{https://dmice.ohsu.edu/cohenaa/systematic-drug-class-review-data.html}{\faLink} & Biomed  &      &      &      &          &     15 &      &      &      &      &      &      &      & \bsq & \bsq & \bsq & \bsq \\
+  Wallace et al.   & \cite{wallace:2010}    & \citeyear{wallace:2010}   & \href{https://github.com/bwallace/citation-screening}{\faLink}                        & Biomed  &   \bsq   &      &      &          &      3 &      &      &      &      &      &      &      & \bsq & \bsq &      &      \\
+  SWIFT-Review     & \cite{howard:2016}     & \citeyear{howard:2016}    & \href{https://link.springer.com/article/10.1186/s13643-016-0263-z#Sec30}{\faLink}     & Biomed  &      &      &      &          &      5 &      &      &      &      &      &      &      & \bsq & \bsq & \bsq & \bsq \\
+  SysRev Query C.  & \ \cite{scells:2017}   & \citeyear{scells:2017}    & \href{https://github.com/ielab/SIGIR2017-SysRev-Collection}{\faLink}                  & Biomed  &   \bsq   &      &      &     PubMed     &     94 &      &      &      & \bsq &      & \bsq &      & \bsq & \bsq & \bsq & \bsq \\
+  CLEF TAR 2017    & \cite{kanoulas:2017}   & \citeyear{kanoulas:2017}  & \href{https://github.com/CLEF-TAR/tar}{\faLink}                                       & Biomed  &   \bsq    &  \wsq    &      &      PubMed    &     50 &      &      &      & \bsq &      & \bsq &      & \bsq & \bsq & \bsq & \bsq \\
+  CLEF TAR 2018    & \cite{kanoulas:2018}   & \citeyear{kanoulas:2018}  & \href{https://github.com/CLEF-TAR/tar}{\faLink}                                       & Biomed  &  \bsq     &   \wsq   &      &      PubMed    &     30 &      &      &      & \bsq &      & \bsq &      & \bsq & \bsq & \bsq & \bsq \\
+  CLEF TAR 2019    & \cite{kanoulas:2019}   & \citeyear{kanoulas:2019}  & \href{https://github.com/CLEF-TAR/tar}{\faLink}                                       & Biomed  &   \bsq    &   \wsq   &      &     PubMed     &     49 &      &      &      & \bsq &      & \bsq &      & \bsq & \bsq & \bsq & \bsq \\
+  Alharbi et al.   & \cite{alharbi:2019}    & \citeyear{alharbi:2019}   & \href{https://github.com/Amal-Alharbi/Systematic_Reviews_Update}{\faLink}             & Biomed  &  \bsq   &  \wsq    &      &      PubMed   &     25 &      &      &   \bsq   &   \bsq   &      &      &      &      &   \bsq   &      &   \bsq   \\
+  Hannousse et al. & \cite{hannousse:2021}  & \citeyear{hannousse:2021} & \href{https://github.com/hannousse/Semantic-Scholar-Evaluation}{\faLink}              & CompSci &  \bsq    &      &      &     S2     &      7 &      &      &      &      &      &      &      &      &  \bsq    &      &  \bsq    \\
+  SysRev Seed C.   & \cite{wang:2022}       & \citeyear{wang:2022}      & \href{https://github.com/ielab/sysrev-seed-collection}{\faLink}                       & Biomed  &   \bsq   &  \wsq    &      &     PubMed     &     40 & \bsq &      &      & \bsq &      & \bsq &      & \bsq & \bsq & \bsq & \bsq \\
+  CSMeD            & \cite{kusa:2023}       & \citeyear{kusa:2023}      &  \href{https://github.com/WojciechKusa/systematic-review-datasets}{\faLink}            & Both    &   \bsq   &  \wsq    &      &   Mixed  &    325 & \bsq &      &      & \bsq & \bsq &      & \bsq & \bsq & \bsq & \bsq & \bsq \\
+  AutoBool         & \cite{wang:2025b}      & \citeyear{wang:2025b}     & \href{https://github.com/ielab/AutoBool}{\faLink}                                     & Biomed  &   \bsq   &  \wsq    &      &     PubMed     & 65,588 &      &      &      &      &      & \bsq &      &      & \bsq &      & \bsq \\
+\midrule
+  \multicolumn{2}{@{}l@{}}{Webis-SR4ALL-26} & 2026                      & \href{https://doi.org/10.5281/zenodo.18431943}{\faLink}                               & Open    & \bsq & \bsq & \wsq & OpenAlex & 301,871 & \wsq & \wsq & \wsq & \wsq & \wsq & \wsq & \wsq & \wsq & \wsq &      & \bsq \\
+\bottomrule
+\addlinespace
+\multicolumn{21}{@{}l@{}}{
+\parbox{\textwidth}{
+\footnotesize Abbreviations: For systematic reviews (SysRevs), we distinguish whether they are available as references (Rfs.), title and abstract (TA), and full texts (FT). For the structured data fields, we distinguish objective~(Obj.), research questions~(RQs), keywords~(KWs), Boolean queries~(BQs), inclusion and exclusion criteria~(Crt.), publication date ranges~(Rng.), publication databases originally queried~(DBs), counts of retrieved~(CR) and included~(CI) publications, and references to publications retrieved~(PR) and included~(PI) in the systematic review. Filled boxes indicate full availability; empty boxes indicate partial availability.}}
+\end{tabular}
+\end{table*}

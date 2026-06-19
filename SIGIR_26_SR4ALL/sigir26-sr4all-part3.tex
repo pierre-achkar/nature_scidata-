@@ -1,0 +1,61 @@
+\section{The Webis-SR4ALL-26 Corpus}
+
+The corpus is designed as a large-scale, cross-disciplinary collection of systematic reviews to support research on evidence synthesis workflows, with a particular focus on the retrieval and screening stages. The construction follows a three-stage enrichment pipeline: (i) large-scale data collection and metadata filtering; (ii) full-text acquisition and document parsing; and (iii) structured information extraction. Inclusion is determined at the metadata level, with subsequent stages augmenting eligible records with full-text representations and structured information. 
+
+\subsection{Data Collection and Filtering}
+Candidate systematic reviews were retrieved from the OpenAlex database on September~30,~2025. We queried the \texttt{title} field for the phrases ``systematic review'' and ``systematic literature review'', restricting results to works of type \texttt{review}. This retrieval yielded 485,446 candidate records.
+
+To remove duplicates arising from multiple identifiers or minor title variations, records were deduplicated using a combination of DOI, OpenAlex ID, and normalized title strings. This process identified and removed 20,343 duplicate entries.
+
+We then applied metadata-based inclusion filters to ensure bibliographic consistency and cross-source integration. Records were excluded if their OpenAlex reference list was empty, if they were not written in English, or if they lacked a valid DOI. In addition, we applied title-based inclusion heuristics to isolate explicitly declared systematic reviews and exclude loosely defined review types. Titles were required to contain an explicit formulation of ``systematic review'' (optionally ``systematic literature review''), including common syntactic variants (e.g., of, in, on, or a colon). To focus on original review studies, we excluded works whose titles indicated updates or revisions, such as explicit mentions of ``update'' or ``updated systematic review''. After applying these filters, 280,886 unique systematic reviews remained in the OpenAlex-derived metadata layer.
+
+To extend coverage beyond OpenAlex title-based retrieval, we incorporated systematic reviews from established benchmark datasets, including CLEF TAR 2017--2019~\cite{kanoulas:2017,kanoulas:2018,kanoulas:2019}, SysRev-Query~\cite{scells:2017}, SysRev-Seed~\cite{wang:2022}, CSMed~\cite{kusa:2023}, and AutoBool~\cite{wang:2025b}. After internal deduplication across these resources, 65,906 unique reviews were obtained. DOI-based matching against the OpenAlex-derived metadata layer showed that 44,921 were already covered. For the remaining 20,985 unmatched reviews, we resolved their OpenAlex identifiers and incorporated the corresponding records into the metadata layer. 
+
+After incorporating the unmatched benchmark reviews, the Webis-SR4ALL-26 metadata layer comprises 301,871 systematic reviews in total. All records are linked to OpenAlex identifiers, providing a unified metadata and citation backbone. Table~\ref{tab:sr4all-metadata-filtering} summarizes the sequential construction of the metadata layer.
+
+To characterize the cross-disciplinary composition of the corpus, we rely on the OpenAlex primary field assignment for each work. The corpus spans 27 primary fields in total, covering a broad range of scientific domains. Medicine accounts for approximately 64\% of reviews. The largest non-medical fields are Psychology (6\%), Health Professions (5\%), Biochemistry, Genetics and Molecular Biology (4\%), Social Sciences (3\%), and Neuroscience (3\%). Dentistry, Environmental Science, Engineering, Computer Science, Immunology and Microbiology, Economics, and related disciplines, which contribute smaller shares. This distribution indicates broad cross-domain coverage, while also highlighting differences in how frequently systematic review methodology is used across disciplines.
+
+In addition to standardized metadata, OpenAlex provides indexed reference lists that form the basis for reference resolution in our setup. All citation links are derived exclusively from OpenAlex, with no external reference parsing, matching or enrichment. As an open, cross-domain infrastructure with broad coverage of scholarly works and citation relations, OpenAlex thus provides a consistent and reproducible foundation for large-scale corpus construction and citation graph derivation~\cite{culbert2025openalexrefcoverage}.
+
+\input{table-filtering-stats}
+
+\subsection{Full-Text Acquisition and Document Parsing}
+We assessed full-text availability for all records in the metadata layer using the PDF links provided in OpenAlex. Where a PDF link was available, we attempted automated download of the full text. This process yielded 72,678 successfully retrieved PDFs. Records without a PDF link, or with non-functional links, remain in the corpus without the full text being available.
+
+All valid PDF documents were parsed into markdown using \textit{PaddleOCR-VL},%
+\footnote{\url{https://github.com/PaddlePaddle/PaddleOCR}}
+a 0.9B-parameter vision--language model for multilingual document parsing. The model is designed to process complex scientific layouts, including multi-column text, tables, and formulas, while maintaining relatively low computational requirements. On the olmOCR-Bench benchmark,%
+\footnote{\url{https://github.com/allenai/olmocr/tree/main/olmocr/bench}}
+PaddleOCR-VL achieves competitive overall effectiveness compared to substantially larger OCR systems, motivating its selection as a balanced trade-off between accuracy and efficiency.
+
+\subsection{Structured Information Extraction}
+To enrich the corpus with structured metadata, we apply an automated LLM-based extraction pipeline to the OCR-parsed full texts. As illustrated in Figure~\ref{fig:extraction_example}, the pipeline maps raw source content to our structured schema. Given the scale and heterogeneity of the corpus, the pipeline prioritizes precision, verifiability, and transparency over completeness, as manual curation does not scale to tens of thousands of reviews.
+
+The pipeline targets methodological fields commonly reported in systematic reviews: study objective, research questions, search strategies (Boolean queries or keywords), eligibility criteria, numbers of studies identified and included, temporal search restrictions, databases queried, and citation chasing strategies. 
+
+Search strategies are of particular importance, as they provide a basis for approximating expert-written queries. Extracted Boolean expressions or keyword formulations can be normalized into executable queries for retrieval experiments, enabling controlled comparisons between author-designed strategies and alternative query generation methods. Study objectives and eligibility criteria further contextualize these strategies and support structured evaluation settings. Reviews with search strategies can therefore be used for direct query-based retrieval experiments. Reviews lacking explicit queries remain valuable for evaluation through their curated reference sets, which serve as relevance judgments independent of the reported search formulation.
+
+\paragraph{Verify-Then-Repair Pipeline}
+To prevent hallucinations and ensure extraction quality, we employ a grounded extraction strategy with iterative repair, based on prior work showing improved extraction accuracy through evidence anchoring~\cite{li:2025}. In the \textbf{Primary Pass}, the Qwen3-32B model extracts all schema-defined fields from the full text, generating candidate values paired with verbatim evidence spans copied directly from the source document. Each extraction then undergoes a two-stage verification process. First, candidates are validated through approximate string matching against the OCR text to ensure the evidence span exists in the document, tolerating minor parsing noise~\cite{barrow:2025}. Second, MiniCheck, an LLM-based verifier, assesses whether the extracted value is factually supported by the provided evidence span~\cite{tang:2024}. Any extraction failing either alignment or semantic verification is strictly discarded and reset to \texttt{null}. To maximize recall without compromising precision, a \textbf{Repair Pass} is triggered for fields that remain \texttt{null} after the primary pass. The model receives a new, targeted prompt focusing only on the missing fields while leaving the successfully extracted values unchanged. The repair outputs undergo the same two-stage verification protocol (\textbf{Final Validation}), and only extractions that survive all verification checks are included in the final corpus.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\linewidth]{figures/example_2.pdf}
+    \caption{Grounded extraction of review key information. Verbatim source spans from the PDF are transformed into structured schema fields via the verify-then-repair pipeline.}
+    \label{fig:extraction_example}
+\end{figure*}
+
+The final output is an evidence-centric structured representation integrating only verified extractions with OpenAlex metadata. For comparability, temporal search constraints are normalized to a canonical year-range format anchored to the publication year, while preserving original values. Table~\ref{tab:sysrev_field_coverage} summarizes metadata and methodological field coverage across the corpus after enrichment.
+
+\input{table_field_cov}
+
+\subsection{Qualitative Evaluation of Extraction}
+To assess extraction quality, we conducted a qualitative analysis of 60 randomly sampled reviews across three outcome categories: mostly filled (n=20), partially filled (n=20), and mostly null (n=20). For each review, we manually compared the original PDF with the extracted JSON to determine whether target fields were present in the source, correctly extracted, incorrectly extracted, or filtered during verification. This allowed us to characterize field-level performance and identify systematic failure modes.
+
+Extraction performance was strongest in the mostly filled subset. In these cases, the pipeline reliably captured Boolean queries, study counts, eligibility criteria, temporal search ranges, and study objectives. Successful extractions were typically associated with clear document structure, explicit section headings (e.g., Search Strategy, Eligibility Criteria), and standardized reporting. This suggests that the pipeline performs robustly when methodological information is clearly outlined and positioned within the document.
+
+A different pattern emerged in the partially filled subset. In many cases, the model correctly identified the relevant information during the initial extraction stage, but subsequent verification stages nullified these fields. Information distributed across multiple sentences or requiring light abstraction was more frequently rejected under strict evidence-matching constraints. For instance, eligibility criteria, snowballing indicators, and initial study counts appeared in the raw extraction trace yet were absent from the final structured output. Overall, verification filtering primarily affected fields not explicitly stated in a single contiguous span, reflecting a focus on high precision for clearly stated fields with lower recall for information spread across the document.
+
+Most failures in the null subset were attributable to document type misalignment rather than extraction errors. The majority of the sampled records corresponded to errata, supplementary materials, or registration documents that did not contain systematic review methodology. In these cases, the absence of extracted fields reflected the absence of target information in the source text.
+
+

@@ -1,0 +1,82 @@
+\begin{tikzpicture}[
+  node distance=10mm and 4.5cm,
+  >=Latex,
+  box/.style={
+    draw, rounded corners,
+    align=center,
+    inner sep=4pt,
+    text width=6cm
+  },
+  logo/.style={inner sep=0pt},
+  db/.style={
+    draw,
+    cylinder,
+    shape border rotate=90,
+    aspect=0.28,
+    align=center,
+    inner sep=2.5pt,
+    text width=1.5cm,
+    minimum height=10mm
+  },
+  labh/.style={
+    midway, above,
+    align=center,
+    text width=2.2cm,
+    inner sep=1.5pt
+  },
+  labvr/.style={
+    midway, left=3pt,
+    align=right,
+    text width=2.2cm,
+    inner sep=1.5pt
+  },
+  labvl/.style={
+    midway, right=3pt,
+    align=left,
+    text width=2.2cm,
+    inner sep=1.5pt
+  }
+]
+
+% OpenAlex (center reference)
+\node[logo] (openalex)
+  {\includegraphics[width=1.5cm]{figures/oax_logo.png}};
+
+% Query directly above
+\node[box, above=of openalex,xshift=2.5cm] (query)
+  {\faSearch~``systematic (literature)? review''};
+
+% Candidate pool returned by OpenAlex (right of logo)
+\node[db, right=of openalex] (cand)
+  {\num{485446}\\studies};
+
+% After filtering metadata/title (below candidate pool)
+\node[db, below=of cand] (meta)
+  {\num{280886}\\studies};
+
+% Integrate benchmarks (left of meta)
+\node[db, left=of meta] (integrate)
+  {\num{301871}\\studies};
+
+% After getting PDFs (below integrate)
+\node[db, below=of integrate] (ft)
+  {\num{72678}\\studies};
+
+% Final extraction (right of ft)
+\node[db, right=of ft] (final)
+  {\num{61951}\\studies};
+
+% Arrows (match screenshot flow)
+\draw[->] ([yshift=10mm]openalex.north) -- (openalex.north);
+\draw[->] (openalex) -- (cand);
+
+\draw[->] (cand) -- node[labvr] {dedupe + filter\\metadata} (meta);
+\draw[->] (meta) -- node[labh] {integrate\\benchmarks} (integrate);
+\draw[->] (integrate) -- node[labvl] {acquire + parse\\full text} (ft);
+\draw[->] (ft) -- node[labh] {extract + verify} (final);
+
+% Optional: extraction is a process on the 63,977 set (no count change)
+% Put it as a label on the vertical arrow going into "content", without adding a new node:
+% \node[align=center, font=\footnotesize] at ($(integrate)!0.5!(content) + (-9mm,0)$) {extract\\fields};
+
+\end{tikzpicture}

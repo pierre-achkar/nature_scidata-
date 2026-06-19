@@ -1,0 +1,10 @@
+\section*{Usage Notes}
+
+%%% NOTES. (journal instructions)
+%%%
+%%% The Usage Notes should contain brief instructions to assist other researchers with reuse of the data. This may include discussion of software packages that are suitable for analysing the assay data files, suggested downstream processing steps (e.g. normalization, etc.), or tips for integrating or comparing the data records with other datasets. Authors are encouraged to provide code, programs or data-processing workflows if they may help others understand or use the data. Please see our code availability policy for advice on supplying custom code alongside Data Descriptor manuscripts. For studies involving privacy or safety controls on public access to the data, this section should describe in detail these controls, including how authors can apply to access the data, what criteria will be used to determine who may access the data, and any limitations on data use.
+
+
+A wide range of research questions can be addressed based on the variety of case data contained in the \webisReuseCorpus. The dataset is distributed as multiple partial files JSONL files to support efficient streaming and filtering also with little computing resources.
+Since some analyses require the full text of the publications included in \webisReuseCorpus, researchers can hydrate the corpus using the text preprocessing component of our processing pipeline, which is included alongside the dataset as a standalone Python script. This allows for transforming GROBID extraction output, for example from the CORE repository, into a compatible text format, such that the locators included in the dataset can be applied to recover the text portions of individual reuse cases. Since the publications the corpus is based upon are open access, the original PDF files can be easily retrieved by their DOI, further lowering the barrier of access. We also provide the code used to calculate the corpus statistics given throughout this article as a usage example to others interested in working with the data.
+

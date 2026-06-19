@@ -1,0 +1,33 @@
+\section*{Background \& Summary}
+
+%%% NOTES. (journal instructions)
+%%%
+%%% (700 words maximum) An overview of the study design, the assay(s) performed, and the created data, including any background information needed to put this study in the context of previous work and the literature. The section should also briefly outline the broader goals that motivated the creation of this dataset and the potential reuse value. We also encourage authors to include a figure that provides a schematic overview of the study and assay(s) design. The Background \& Summary should not include subheadings. This section and the other main body sections of the manuscript should include citations to the literature as needed.
+
+
+The reuse of text has a longstanding history in science. In qualitative research, besides verbatim quotations, the techniques of paraphrasing, translation, and summarization are instrumental to both teaching and learning scientific writing as well as to gaining new scientific insights \cite{sun:2015}. In quantitative research, the use of templates as an efficient way of reporting new results on otherwise standardized workflows is common \cite{anson:2020}. As science often progresses incrementally, authors may also reuse their texts across (different types of) subsequent publications on the same subject (also called ``text recycling'') \cite{moskovitz:2015,hall:2018,anson:2020}. Likewise, in interdisciplinary research, reuse across publications at venues of different disciplines has been observed to better promote the dissemination of new insights \cite{bird:2002,wen:2007}. Independent of all these manifestations of text reuse is the academic context that establishes their legitimacy: In certain circumstances, any of them may be considered plagiarism, i.e., intentional reuse of a text without acknowledging the original source, in violation of the honor code and academic integrity \cite{eberle:2013}.
+
+Text reuse has been quantitatively studied in many scientific disciplines \cite{ganascia:2014,citron:2015,sun:2015,horbach:2019,anson:2020};
+yet few studies assess the phenomenon at scale beyond what can be manually analyzed \cite{citron:2015,horbach:2019}. Large-scale studies require the use of automatic text reuse detection technology. This being both algorithmically challenging and computationally expensive, lack of expertise or budget may have prevented such studies. Employing proprietary analysis software or services instead, too, is subject to budgetary limitations, in addition to their lack of methodological transparency and reproducibility.
+
+Text reuse detection itself is still subject to ongoing research in natural language processing and information retrieval. Setting up a custom processing pipeline thus demands an evaluation against the state of the art. The challenges in constructing a competitive solution for this task arise from the aforementioned diversity of different forms of text reuse, the large solution space of detection approaches, and the need to apply heuristics that render a given solution sufficiently scalable. Preprocessing a collection of scientific publications, too, presents its own difficulties. This includes the noisy and error-prone conversion of publications' original PDF versions to machine-readable texts and the collection of reliable metadata about the publications. The available quantitative studies on scientific text reuse lack with respect to the presentation of preprocessing steps taken, the design choices of the solution to text reuse detection, and their justification in terms of rigorous evaluation. Altogether, comparable, reproducible, reliable, and accessible research on the phenomenon of scientific text reuse remains an open problem.
+
+To provide for a solid new foundation for the investigation of scientific text reuse within and across disciplines, we compile \webisReuseCorpus. To overcome the aforementioned issues, we stipulate three design principles for the creation of the dataset:
+\Ni
+high coverage, both in terms of the number of included publications and the variety of scientific disciplines;
+\Nii
+a scalable approach to reuse detection with a focus on high precision at a competitive recall, capturing a comprehensive set of reused passages as reliable resource for research on scientific text reuse; and 
+\Niii
+comprehensive metadata to contextualize each case, to address a wide range of potential hypotheses.
+
+\webisReuseCorpus results from applying scalable text reuse detection approaches to a large collection of scientific open-access publications, exhaustively comparing all documents to extract a comprehensive dataset of reused passages between them. It contains more than 91~million cases of reused passages among 4.2~million unique publications. The cases stem from 46~scientific fields of study, grouped into 14~scientific areas in all four major scientific disciplines, and spanning over 150~years of scientific publishing between~1860 and~2018. The data is openly accessible to be useful to a wide range of researchers with different scientific backgrounds, enabling both qualitative and quantitative analysis.
+
+
+%%%
+%%% 622 Words
+
+%%% NOTES.
+%%%
+%%% - Scientific writing incorporates both, writing education and business-like "writing for reuse."
+%%% - On the one hand, reporting on science is a learning task that undergrads, graduate students need to learn, hone, and master in order for them to become independent researchers.
+%%% - On the other hand, many scientific writing subjects appear to be repetitive, and artificially enforcing every artifact and every process to be re-described by every scholar appears wasteful; more economical would be to develop templates for the kinds and types of research that do follow a prescribed methodology.

@@ -1,0 +1,48 @@
+Editor
+
+- difficult for text reuse researchers
+- concerns about the data
+- further examples of reuse
+- more justification for approach
+- relationship of similarity
+- analysis about text reuse within the corpus
+- connection between similarity and (inappropriate) reuse
+- potential ethical concerns
+
+Reviewer 1
+
+- unclear candidate retrieval
+- problems with math
+- problems with json
+- min consecutive words
+- examples
+- visualisation
+- data sample/tool for testing
+- Debora Weber-Wulff
+- ~their metadata~
+- "first involved publication as a, and to the second as b"
+
+Reviewer 2
+
+Introduction
+- media and humanities examples
+- examples of reuse
+
+Methods
+- reuse vs written indepedently
+- reuse vs similarity
+- failure analysis
+- data only up to 2018
+- data sources
+- GROBID
+- explain CORE-DOI mapping
+- explain and verify MAG-DFG mapping
+- representation of scientific fields
+- biases
+- matches within text
+
+Data Records
+- ~their metadata~
+
+Usage Notes 
+- ethical issues
