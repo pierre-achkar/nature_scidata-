@@ -2,10 +2,10 @@
 
 | To Do | Doing | Done |
 |-------|-------|------|
-| [ISSUE-01 Draft `Data Records`: enumerate released files, layers, identifiers, and formats](issues/ISSUE-01-data-records-inventory.md) |  | [ISSUE-32 Orientation and planning docs created](issues/ISSUE-32-orientation-planning-docs.md) |
-| [ISSUE-02 Draft `Data Records`: add one schema table for the main released records](issues/ISSUE-02-data-records-schema-table.md) |  | [ISSUE-33 `SR4ALL_scientific_data_notes.md` aligned with current repository state](issues/ISSUE-33-notes-aligned-repo-state.md) |
-| [ISSUE-03 Draft `Data Records`: explain how OpenAlex metadata, references, extracted fields, and normalized queries link together](issues/ISSUE-03-data-records-layer-linking.md) |  | [ISSUE-34 `AGENTS.md` and `PROJECT_ORIENTATION.md` added](issues/ISSUE-34-agents-project-orientation-added.md) |
-| [ISSUE-04 Draft `Technical Validation`: define evaluation questions and scope](issues/ISSUE-04-techval-evaluation-scope.md) |  |  |
+|  |  | [ISSUE-01 Draft `Data Records`: enumerate released files, layers, identifiers, and formats](issues/ISSUE-01-data-records-inventory.md) |
+| [ISSUE-02 Draft `Data Records`: add one schema table for the main released records](issues/ISSUE-02-data-records-schema-table.md) |  | [ISSUE-32 Orientation and planning docs created](issues/ISSUE-32-orientation-planning-docs.md) |
+| [ISSUE-03 Draft `Data Records`: explain how OpenAlex metadata, references, extracted fields, and normalized queries link together](issues/ISSUE-03-data-records-layer-linking.md) |  | [ISSUE-33 `SR4ALL_scientific_data_notes.md` aligned with current repository state](issues/ISSUE-33-notes-aligned-repo-state.md) |
+| [ISSUE-04 Draft `Technical Validation`: define evaluation questions and scope](issues/ISSUE-04-techval-evaluation-scope.md) |  | [ISSUE-34 `AGENTS.md` and `PROJECT_ORIENTATION.md` added](issues/ISSUE-34-agents-project-orientation-added.md) |
 | [ISSUE-05 Draft `Technical Validation`: replace the current 60-review validation idea with a statistically defensible sample design](issues/ISSUE-05-techval-sample-design.md) |  |  |
 | [ISSUE-06 Draft `Technical Validation`: define stratification variables](issues/ISSUE-06-techval-stratification.md) |  |  |
 | [ISSUE-07 Draft `Technical Validation`: specify manual review protocol and scoring criteria](issues/ISSUE-07-techval-manual-protocol.md) |  |  |
